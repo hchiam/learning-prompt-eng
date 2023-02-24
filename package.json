@@ -1,0 +1,29 @@
+{
+  "name": "learning-template",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --bail --findRelatedTests **/*.js",
+    "lint": "prettier --write *.{js,css,html,scss,json,md,ts,tsx}",
+    "es-check": "es-check es5 './**/*.js' --not=node_modules"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "es-check": "^6.1.1",
+    "husky": "^4.3.0",
+    "jest": "^27.3.1",
+    "lint-staged": "^12.1.3",
+    "prettier": "^2.4.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "jest --bail --findRelatedTests",
+      "es-check es5 './**/*.js' --not=node_modules"
+    ],
+    "*.{js,css,html,scss,json,md,ts,tsx}": "prettier --write"
+  }
+}
