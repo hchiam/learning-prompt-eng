@@ -1,45 +1,18 @@
-# Learning template [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/hchiam/learning-template/blob/main/LICENSE)
+# Learning prompt engineering
 
 Just one of the things I'm learning. https://github.com/hchiam/learning
 
-(To use this template fast with [`gh` CLI](https://github.com/hchiam/learning-gh), you can run [`gh repo create --template learning-template learning-...`](https://cli.github.com/manual/gh_repo_create) or [set up a custom shortcut CLI command](https://github.com/hchiam/learning-bash-scripts/blob/main/gh-cli-create-learning-repo-from-template.sh).)
+- prompt engineering is apparently around 2-3 years old! (as of 2023)
+- do prompt engineering to most effectively use new models as they currently are?
 
-(To create a convenience script repo, use this template instead: https://github.com/hchiam/convenience)
+## Read
 
-(To create a website fast, use a code generator like [`create-next-app`](https://github.com/hchiam/learning-nextjs), [`sapper`](https://github.com/hchiam/learning-sapper), a [svelte template](https://github.com/sveltejs/template), [`yo`](https://yeoman.io/generators), or my [project-template](https://github.com/hchiam/project-template))
+## To read
 
-<!-- Add reference link(s) here -->
-
-## From scratch
-
-Using [`yarn`](https://github.com/hchiam/learning-yarn):
-
-```bash
-yarn add
-```
-
-Or with `npm`:
-
-```bash
-npm install
-```
-
-And then:
-
-```bash
-
-```
-
-## Starting by testing out this repo <!-- Replace "template"s and "# and then ..."s in this section -->
-
-Using [`yarn`](https://github.com/hchiam/learning-yarn): (triple-click to select all)
-
-```bash
-git clone https://github.com/hchiam/learning-template.git && cd learning-template && yarn; # and then ...
-```
-
-Or with `npm`: (triple-click to select all)
-
-```bash
-git clone https://github.com/hchiam/learning-template.git && cd learning-template && npm install; # and then ...
-```
+- what is it? https://en.wikipedia.org/wiki/Prompt_engineering
+- why bother? https://simonwillison.net/2023/Feb/21/in-defense-of-prompt-engineering/
+- but a little humility reminder: prompt injection https://simonwillison.net/2022/Sep/12/prompt-injection (note the follow-up links too)
+- learn it? https://learnprompting.org
+- read up Claude vs ChatGPT: https://pub.towardsai.net/the-ai-behind-claude-the-chatgpt-competitor-that-has-raised-over-1-billion-5e60823a2dee?gi=ebedf7e219e4
+- play with [ChatGPT](https://chat.openai.com) or Claude (no test link right now?) to come up with complex behaviors/tasks done from a series of well crafted prompts
+- explore examples? https://www.reddit.com/r/PromptDesign
