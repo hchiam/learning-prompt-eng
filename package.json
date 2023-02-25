@@ -2,6 +2,7 @@
   "name": "learning-template",
   "license": "MIT",
   "scripts": {
+    "dev": "npx vite",
     "test": "jest --bail --findRelatedTests **/*.js",
     "lint": "prettier --write *.{js,css,html,scss,json,md,ts,tsx}",
     "es-check": "es-check es5 './**/*.js' --not=node_modules"

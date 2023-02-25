@@ -24,3 +24,19 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 ## According to https://chat.openai.com:
 
 <img src="https://github.com/hchiam/learning-prompt-eng/raw/main/screenshots/Prompt_Engineering_Explanation_ELI5.png" height="500rem">
+
+## Example prompts
+
+```sh
+npx vite
+```
+
+Or using [`yarn`](https://github.com/hchiam/learning-yarn):
+
+```sh
+yarn
+```
+
+```sh
+yarn dev
+```
