@@ -7,16 +7,16 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 ## Read
 
-- what is it? (basically adding text around the user input to prime the model for the kinds of output it should give, like giving it context for the input and a description of the expected output, and even the start of the expected output) https://en.wikipedia.org/wiki/Prompt_engineering and https://fourweekmba.com/prompt-engineering/
-- why bother? clear communication is hard, especially when you need to understand how an ML model understands things (like broader considerations, context, and interpretations of words), and you need to run experiments to understand an effectively black box system, and avoid unintentionally making the model learn the wrong things or respond with the wrong things, and draw on many fields (deep learning, linguistics, psychology, computer security, philosophy, and for image generation, art history) https://simonwillison.net/2023/Feb/21/in-defense-of-prompt-engineering/
+- _what is it?_ (basically adding text around the user input to prime the model for the kinds of output it should give, like giving it context for the input and a description of the expected output, and even the start of the expected output) https://en.wikipedia.org/wiki/Prompt_engineering and https://fourweekmba.com/prompt-engineering/
+- _why bother?_ clear communication is hard, especially when you need to understand how an ML model understands things (like broader considerations, context, and interpretations of words), and you need to run experiments to understand an effectively black box system, and avoid unintentionally making the model learn the wrong things or respond with the wrong things, and draw on many fields (deep learning, linguistics, psychology, computer security, philosophy, and for image generation, art history) https://simonwillison.net/2023/Feb/21/in-defense-of-prompt-engineering/
 
 ## To read
 
-- but a little humility reminder: prompt injection https://simonwillison.net/2022/Sep/12/prompt-injection (note the follow-up links too)
-- **learn it? https://learnprompting.org**
-- read up Claude vs ChatGPT: https://pub.towardsai.net/the-ai-behind-claude-the-chatgpt-competitor-that-has-raised-over-1-billion-5e60823a2dee?gi=ebedf7e219e4
+- _but a little humility reminder:_ prompt injection https://simonwillison.net/2022/Sep/12/prompt-injection (note the follow-up links too)
+- **_learn it?_ https://learnprompting.org**
+- _read up Claude vs ChatGPT:_ https://pub.towardsai.net/the-ai-behind-claude-the-chatgpt-competitor-that-has-raised-over-1-billion-5e60823a2dee?gi=ebedf7e219e4
 - **play with [ChatGPT](https://chat.openai.com) or Claude (no test link right now?) to come up with complex behaviors/tasks done from a series of well crafted prompts**
-- explore examples? https://www.reddit.com/r/PromptDesign
+- _explore examples?_ https://www.reddit.com/r/PromptDesign
 
 <hr>
 <hr>
