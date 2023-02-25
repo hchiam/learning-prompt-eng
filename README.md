@@ -7,9 +7,10 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 ## Read
 
+- what is it? (basically adding text around the user input to prime the model for the kinds of output it should give, like giving it context for the input and a description of the expected output, and even the start of the expected output) https://en.wikipedia.org/wiki/Prompt_engineering and https://fourweekmba.com/prompt-engineering/
+
 ## To read
 
-- what is it? https://en.wikipedia.org/wiki/Prompt_engineering
 - why bother? https://simonwillison.net/2023/Feb/21/in-defense-of-prompt-engineering/
 - but a little humility reminder: prompt injection https://simonwillison.net/2022/Sep/12/prompt-injection (note the follow-up links too)
 - **learn it? https://learnprompting.org**
