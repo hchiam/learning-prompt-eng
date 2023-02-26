@@ -46,6 +46,7 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
     - or using the LLM to ask clarifying questions to clarify ambiguity, as long as you provide the right knowledge-base text. But note that it might generate false information if it's not in the provided knowledge-base text, or if the user prompt is still too ambiguous.
     - or using GPT-3 to reduce the number of intents in a chatbot to broader categories for context (think: dropdown) for the exact user question and use [semantic search](https://en.wikipedia.org/wiki/Semantic_search) to narrow down the knowledge-base text to add to the user question (and relevant last few messages between the user and chatbot as context). But note that it might generate false information if it's not in the provided knowledge-base text, or if the user prompt is still too ambiguous.
     - or interleave code with natural language to calculate answers: https://nbviewer.org/github/trigaten/Learn_Prompting/blob/main/docs/code_examples/PAL.ipynb
+  - https://huggingface.co/datasets/fka/awesome-chatgpt-prompts
   - https://www.reddit.com/r/PromptDesign
 - https://trydyno.com
 - https://dust.tt/
