@@ -7,7 +7,7 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 ## Read
 
-- **_what is it?_** (basically adding text around the user input to prime the model for the kinds of output it should give, like giving it context for the input and a description of the expected output, and even the start of the expected output) https://en.wikipedia.org/wiki/Prompt_engineering and https://fourweekmba.com/prompt-engineering/
+- **_what is it?_** how to prompt language AIs like ChatGPT to do what you intended, while avoiding known issues (basically adding text around the user input to prime the model for the kinds of output it should give, like giving it context for the input and a description of the expected output, and even the start of the expected output) https://en.wikipedia.org/wiki/Prompt_engineering and https://fourweekmba.com/prompt-engineering/
   - **_treat LLMs like autocomplete engines and pattern-matching generators:_** zero-shot, one-shot, few-shot prompting: https://www.youtube.com/watch?v=v2gD8BHOaX4
 - **_why bother?_** clear communication is hard, especially when you need to understand how an ML model understands things (like broader considerations, context, and interpretations of words), and you need to run experiments to understand an effectively black box system, and avoid unintentionally making the model learn the wrong things or respond with the wrong things, and draw on many fields (deep learning, linguistics, psychology, computer security, philosophy, and for image generation, art history) https://simonwillison.net/2023/Feb/21/in-defense-of-prompt-engineering/
   - **_but it might get automated away:_** https://www.youtube.com/watch?v=TPIXDkaLsZM
