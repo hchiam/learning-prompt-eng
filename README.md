@@ -52,6 +52,8 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 - https://trydyno.com
 - https://dust.tt/
 - more: https://learnprompting.org/docs/additional
+- udemy:
+  - https://www.udemy.com/course/promptengineering: consider accuracy, relevance, and usefulness
 
 <hr>
 <hr>
