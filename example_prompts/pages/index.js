@@ -138,7 +138,7 @@ export default function Home() {
           value={keyInput}
           onChange={(e) => setKeyInput(e.target.value)}
           disabled={!enableSubmit}
-          className={styles.password + ' ' + (declutter ? styles.declutter : "")}
+          className={styles['api-key'] + ' ' + (declutter ? styles.declutter : "")}
         />
         <img
           src="/logo.png"
