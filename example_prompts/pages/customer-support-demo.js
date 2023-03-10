@@ -9,6 +9,7 @@ import {
 } from "../helpers/customer-support-demo/contactSupportTexts";
 import referToDoc from "../helpers/customer-support-demo/referToDoc";
 import getDocTextToReferTo from "../helpers/customer-support-demo/knowledgeBase/getDocTextToReferTo";
+import { tableOfContents } from "../helpers/customer-support-demo/tableOfContents";
 
 const maxUserPromptLength = 50;
 
@@ -229,11 +230,11 @@ function preprocessUserInput(text) {
 
 function convertSupportTextToHtml(text) {
   if (!text) return text;
-  if (!text.includes(contactSupportText)) return text;
+  if (!text.includes(contactUrl)) return text;
   return (
     <>
       {text
-        .split(contactSupportText)
+        .split(contactUrl)
         .slice(-1)
         .flatMap((item) => [
           <>
@@ -243,6 +244,9 @@ function convertSupportTextToHtml(text) {
             <a href={contactUrl} target="_blank">
               {contactUrl}
             </a>
+            <hr />
+            <p>FYI, here's the Table of Contents of docs I referred to:</p>
+            <pre>{tableOfContents}</pre>
           </>,
         ])}
     </>
