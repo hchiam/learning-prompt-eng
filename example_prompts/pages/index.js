@@ -131,6 +131,15 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <p className={declutter ? styles.declutter : ""}>
+          To find or create your OpenAI API key, go to{" "}
+          <a
+            href="https://platform.openai.com/account/api-keys"
+            target="_blank"
+          >
+            https://platform.openai.com/account/api-keys
+          </a>
+        </p>
         <input
           type="password"
           name="key"
