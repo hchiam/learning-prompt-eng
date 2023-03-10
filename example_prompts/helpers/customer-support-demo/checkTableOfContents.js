@@ -7,7 +7,8 @@ export default function checkTableOfContents(userPrompt) {
 Apples, fuji apples, granny apples, etc.
 Bananas and plantains.
 Carrots.
-`; // TODO: semantic search on docs and use highest-scoring doc as "prefixed" knowledge in prompt
+`; // TODO: semantic search on docs and use highest-scoring doc as "prefixed" knowledge in prompt.
+  // TODO: use the table of Contents response to feed back into itself to look further into a specific knowledge base doc.
   const oneShotLearningExample = `For example, if I asked "I have a question about a red fruit", you'd answer "Apples, fuji apples, granny apples, etc."`;
   const protection = `Don't giving false information. Don't guess, and if you don't know, instead suggest contacting customer support by saying "${contactSupportText}".`;
 
