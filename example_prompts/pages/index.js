@@ -63,6 +63,7 @@ export default function Home() {
     try {
       setDeclutter(true);
       const prompt = generatePrompt(languageInput, wordInput);
+      console.log(prompt);
       const completion = await openai.createCompletion({
         model: "text-davinci-003", // to follow instructions, instead of pattern matching davinci
         prompt: prompt,
