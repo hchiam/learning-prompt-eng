@@ -1,6 +1,6 @@
 # Example prompts
 
-You can see an example conversation here, showing an attempt at getting ChatGPT to produce responses that are progressively more relevant: https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/example-mnemonic-generator-conversation.txt
+You can see an example conversation here, showing an attempt at getting ChatGPT to produce responses that are progressively more relevant: https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/2_example-mnemonic-generator-conversation.txt
 
 ## Interactive demo
 
