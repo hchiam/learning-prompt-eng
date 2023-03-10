@@ -246,7 +246,32 @@ function convertSupportTextToHtml(text) {
             </a>
             <hr />
             <p>FYI, here's the Table of Contents of docs I referred to:</p>
-            <pre>{tableOfContents}</pre>
+            <ol>
+              <li>
+                <a
+                  href="https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/customer-support-demo/knowledgeBase/apples.js"
+                  target="_blank"
+                >
+                  "apples doc"
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/customer-support-demo/knowledgeBase/bananas.js"
+                  target="_blank"
+                >
+                  "bananas doc"
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/customer-support-demo/knowledgeBase/carrots.js"
+                  target="_blank"
+                >
+                  "carrots doc"
+                </a>
+              </li>
+            </ol>
           </>,
         ])}
     </>
