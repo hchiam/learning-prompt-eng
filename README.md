@@ -60,7 +60,7 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 ## According to https://chat.openai.com:
 
-<img src="https://github.com/hchiam/learning-prompt-eng/raw/main/screenshots/1b_Prompt_Engineering_Explanation_ELI5.png" height="500rem">
+<img src="https://github.com/hchiam/learning-prompt-eng/raw/main/example_prompts/1b_Prompt_Engineering_Explanation_ELI5.png" height="500rem">
 
 ## Example prompts ([`/example_prompts`](https://github.com/hchiam/learning-prompt-eng/tree/main/example_prompts#example-prompts))
 
