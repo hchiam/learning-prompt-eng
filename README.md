@@ -70,8 +70,8 @@ or try it locally with your OpenAI API key set up in `example_prompts/.env`:
 
 ```sh
 cd example_prompts
-npm install
+npm install # or yarn
 
-npm run dev
+npm run dev # or yarn dev
 # http://localhost:3000/
 ```

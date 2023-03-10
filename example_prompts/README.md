@@ -7,7 +7,7 @@ For more info: https://beta.openai.com/docs/quickstart
 ## Setup
 
 ```sh
-npm install
+npm install # or yarn
 
 cp .env.example .env
 # or in Windows powershell: copy .env.example .env
@@ -18,7 +18,7 @@ cp .env.example .env
 ## Run
 
 ```sh
-npm run dev
+npm run dev # or yarn dev
 # http://localhost:3000
 ```
 
