@@ -5,7 +5,7 @@ import styles from "./index.module.css";
 import generatePrompt from "../helpers/generatePrompt";
 import languageList from "../helpers/languageList";
 
-export default function Home() {
+export default function CustomerSupportDemo() {
   const [keyInput, setKeyInput] = useState("");
   const [languageInput, setLanguageInput] = useState("");
   const [wordInput, setWordInput] = useState("");
@@ -184,7 +184,7 @@ export default function Home() {
               <p key={i}>{x}</p>
             ))}
         </div>
-        <a href="/customer-support-demo">Customer Support Demo</a>
+        <a href="/">Home</a>
       </main>
     </div>
   );
