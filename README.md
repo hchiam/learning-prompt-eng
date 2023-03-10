@@ -66,6 +66,8 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 https://hchiam-example-prompts.surge.sh
 
+https://hchiam-example-prompts.surge.sh/customer-support-demo (cites docs)
+
 or try it locally with your OpenAI API key set up in `example_prompts/.env`:
 
 ```sh
