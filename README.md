@@ -62,7 +62,9 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 <img src="https://github.com/hchiam/learning-prompt-eng/raw/main/screenshots/Prompt_Engineering_Explanation_ELI5.png" height="500rem">
 
-## Example prompts (`/example_prompts`)
+## Example prompts ([`/example_prompts`](https://github.com/hchiam/learning-prompt-eng/tree/main/example_prompts#example-prompts))
+
+https://github.com/hchiam/learning-prompt-eng/tree/main/example_prompts#example-prompts
 
 https://hchiam-example-prompts.surge.sh
 
@@ -79,5 +81,6 @@ npm run dev # or yarn dev
 ```
 
 You might be interested in the code related to generating prompts for the customer support demo, for example:
+
 - https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/customer-support-demo/referToDoc.js
 - https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/antiIgnoreInstructions.js
