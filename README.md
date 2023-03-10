@@ -77,3 +77,7 @@ npm install # or yarn
 npm run dev # or yarn dev
 # http://localhost:3000/
 ```
+
+You might be interested in the code related to generating prompts for the customer support demo, for example:
+- https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/customer-support-demo/referToDoc.js
+- https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/antiIgnoreInstructions.js
