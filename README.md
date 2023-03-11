@@ -26,6 +26,7 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
           - e.g. `Generate 4 facts about ... Then use these facts to write a short blog post using the information:`
           - e.g. `Generate 4 facts about ...` --> `(...facts here...) Use the above facts to write a short blog post about ...` Or `(...country size facts here...) Which country is larger?`
           - either way, you can then generate multiple answers and take the majority answer as the overall final answer (see [self-consistency](https://learnprompting.org/docs/intermediate/self_consistency) note above)
+  - remember: you can even ask the model to generate prompts!
   - [make outputs more reliable](https://learnprompting.org/docs/category/%EF%B8%8F-reliability):
     - remove biases in examples in the prompt (represent classes evenly, randomly shuffle classes in the examples, and explicitly instruct the AI to be unbiased)
       - [`We should treat people from different socioeconomic statuses, sexual orientations, religions, races, physical appearances, nationalities, gender identities, disabilities, and ages equally. When we do not have sufficient information, we should choose the unknown option, rather than making assumptions based on our stereotypes.`](https://learnprompting.org/docs/category/%EF%B8%8F-reliability)
@@ -39,8 +40,10 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
     - stage 2: "AI feedback": RLAIF (RL from AI feedback)
 
 - **play with [ChatGPT](https://chat.openai.com) or Claude (no test link right now?) to come up with complex behaviors/tasks done from a series of well crafted prompts**
+
   - example single-step prompts: https://platform.openai.com/examples
   - https://platform.openai.com/docs/guides/completion/prompt-design
+    - be explicit: ChatGPT is very flexible and can do so many things, so you need to be specific.
     - show > tell
     - give quality examples
     - check settings: e.g., if there's only 1 right answer, lower the temperature (randomness) and top_p (vocab)
@@ -58,16 +61,19 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
     - consider hashed end-user IDs to help when misuse is detected: https://platform.openai.com/docs/guides/safety-best-practices/end-user-ids
   - https://platform.openai.com/docs/guides/production-best-practices
 
-## To read
-
 - **_explore examples?_**
+  - remember: you can even ask the model to generate prompts!
   - https://learnprompting.org/docs/category/-applied-prompting
     - like using the LLM to generate better prompts to put back into the LLM!
     - or using the LLM to ask clarifying questions to clarify ambiguity, as long as you provide the right knowledge-base text. But note that it might generate false information if it's not in the provided knowledge-base text, or if the user prompt is still too ambiguous.
     - or using GPT-3 to reduce the number of intents in a chatbot to broader categories for context (think: dropdown) for the exact user question and use [semantic search](https://en.wikipedia.org/wiki/Semantic_search) to narrow down the knowledge-base text to add to the user question (and relevant last few messages between the user and chatbot as context). But note that it might generate false information if it's not in the provided knowledge-base text, or if the user prompt is still too ambiguous.
     - or interleave code with natural language to calculate answers: https://nbviewer.org/github/trigaten/Learn_Prompting/blob/main/docs/code_examples/PAL.ipynb
-  - https://huggingface.co/datasets/fka/awesome-chatgpt-prompts
+  - https://huggingface.co/datasets/fka/awesome-chatgpt-prompts (click to expand)
   - https://www.reddit.com/r/PromptDesign
+  - https://discord.gg/7enStJXQzD
+
+## To read
+
 - https://trydyno.com
 - https://dust.tt/
 - more: https://learnprompting.org/docs/additional
