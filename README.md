@@ -71,14 +71,15 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
   - https://huggingface.co/datasets/fka/awesome-chatgpt-prompts (click to expand)
   - https://www.reddit.com/r/PromptDesign
   - https://discord.gg/7enStJXQzD
-
-## To read
-
-- https://trydyno.com
-- https://dust.tt/
 - more: https://learnprompting.org/docs/additional
+  - 8 tips for writing better prompts: https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api
+    - e.g.: `Summarize the text below and (...) {text}` --> `Summarize the text below and (...) Text: """{text}"""`
+    - e.g.: add a "leading word" or start the first word to nudge the model's response towards a specific pattern: `Write code in Python to do (...):` --> `Write code in Python to do (...): import`
+    - model, temperature, max_tokens, stop
 - udemy:
   - https://www.udemy.com/course/promptengineering: consider accuracy, relevance, and usefulness
+- https://trydyno.com
+- https://dust.tt/
 
 <hr>
 <hr>
