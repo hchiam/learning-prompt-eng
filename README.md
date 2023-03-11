@@ -32,10 +32,13 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
     - provide diverse prompts --> diverse completions --> verifier on answers and verifier on reasoning steps
     - make the LLM evaluate its own answer: e.g. `Q: ...? A: ... Do you think (...) is really the correct answer?` --> let the AI respond Yes/No. Similar things can be done for checking if the answer is following guidelines and then asking the AI to respond with some kind of revised response to actually show the user.
     - calibrate LLMs: provide a neutral prompt, see how well the probability distribution of response classes matches random vs biased
+- **_read up Claude vs ChatGPT:_** https://pub.towardsai.net/the-ai-behind-claude-the-chatgpt-competitor-that-has-raised-over-1-billion-5e60823a2dee?gi=ebedf7e219e4
+  - CAI = Constitutional AI = improvement on RLHF (Reinforcement Learning from Human Feedback) by not requiring human feedback labels for harmfulness, and to train through principles like a "constitution":
+    - stage 1: "human feedback": human-supervised pre-training to align with the principles/"constitution" ("red teaming")
+    - stage 2: "AI feedback": RLAIF (RL from AI feedback)
 
 ## To read
 
-- **_read up Claude vs ChatGPT:_** https://pub.towardsai.net/the-ai-behind-claude-the-chatgpt-competitor-that-has-raised-over-1-billion-5e60823a2dee?gi=ebedf7e219e4
 - **play with [ChatGPT](https://chat.openai.com) or Claude (no test link right now?) to come up with complex behaviors/tasks done from a series of well crafted prompts**
   - example prompts: https://platform.openai.com/examples
   - https://platform.openai.com/docs/guides/completion/prompt-design
