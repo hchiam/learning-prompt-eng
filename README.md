@@ -78,8 +78,8 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
     - model, temperature, max_tokens, stop
 - udemy:
   - https://www.udemy.com/course/promptengineering: consider accuracy, relevance, and usefulness
-- https://trydyno.com
-- https://dust.tt/
+- https://trydyno.com = playground
+- https://dust.tt/ = make LLM apps
 
 <hr>
 <hr>
