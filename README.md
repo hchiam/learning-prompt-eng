@@ -77,7 +77,7 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
     - e.g.: add a "leading word" or start the first word to nudge the model's response towards a specific pattern: `Write code in Python to do (...):` --> `Write code in Python to do (...): import`
     - model, temperature, max_tokens, stop
 - udemy:
-  - https://www.udemy.com/course/promptengineering: consider accuracy, relevance, and usefulness
+  - https://www.udemy.com/course/promptengineering: consider accuracy, relevance, and usefulness. For example, simply asking for list of exercise tips might be okay, but if your client actually wants specific aerobic exercises to help treat a specific condition or has a specific goal in mind, then including that in the prompt will help increase relevance/usefulness to the user. Be specific! <-- task, context, wording, format.
 - https://trydyno.com = playground
 - https://dust.tt/ = make LLM apps
 
