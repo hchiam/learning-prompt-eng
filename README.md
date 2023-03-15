@@ -80,13 +80,13 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
     - model, temperature, max_tokens, stop
 - udemy:
   - https://www.udemy.com/course/promptengineering:
-    - consider accuracy, relevance, and usefulness. For example, simply asking for a summary or list of exercise tips might be okay, but if your client actually wants specific aerobic exercises to help treat a specific condition or has a specific goal in mind or expect certain things in the summary (like numbers or sources or types of tips, etc.), then including that in the prompt will help increase relevance/usefulness to the user. Be specific! <-- task, context, wording, format. (wording: vocabulary appropriate to the field but also to set the tone for the expected output given to the target audience)
+    - consider _**accuracy, relevance, and usefulness**_. For example, simply asking for a summary or list of exercise tips might be okay, but if your client actually wants specific aerobic exercises to help treat a specific condition or has a specific goal in mind or expect certain things in the summary (like numbers or sources or types of tips, etc.), then including that in the prompt will help increase relevance/usefulness to the user. Be specific! <-- task, context, wording, format. (wording: vocabulary appropriate to the field but also to set the tone for the expected output given to the target audience)
     - consider breaking down a large complex essay task in-one-go into easier intro/discussion/conclusion sections as tasks instead. Use counterfactual thinking to help think of how to de-bias your prompts.
     - consider telling the LLM to intentionally leave out information, like if you want it to interact like a Question-and-Answer conversation and only ask questions and not generate both sides of the conversation, e.g. `teach me (...), including a quiz at the end, but don't give me the answers and then tell me if I got the answer right when I respond.`
     - consider setting up regular checks on bias and privacy, and be transparent on how the model is trained and to manage expectations.
     - consider subscribing to blogs/leaders in Prompt Engineering to update/learn/collaborate/network
   - https://www.udemy.com/course/chatgpt-prompt-engineering:
-    - a well-engineered prompt = instructions + (examples) + request
+    - a _**well-engineered prompt = instructions + (examples) + request**_
       - instructions:
         - `"Act as ..."`
         - `"You know ..."`, `"You have been ..."`, `"You will ..."`
