@@ -85,6 +85,22 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
     - consider telling the LLM to intentionally leave out information, like if you want it to interact like a Question-and-Answer conversation and only ask questions and not generate both sides of the conversation, e.g. `teach me (...), including a quiz at the end, but don't give me the answers and then tell me if I got the answer right when I respond.`
     - consider setting up regular checks on bias and privacy, and be transparent on how the model is trained and to manage expectations.
     - consider subscribing to blogs/leaders in Prompt Engineering to update/learn/collaborate/network
+  - https://www.udemy.com/course/chatgpt-prompt-engineering:
+    - a well-engineered prompt = instructions + (examples) + request
+      - instructions:
+        - `"Act as ..."`
+        - `"You know ..."`, `"You have been ..."`, `"You will ..."`
+        - `"Your goal is to ..."`
+        - `"You are (...characteristics...)"` (behaviour)
+        - `"You will ..."`, `"I will ..."` (interaction)
+      - examples:
+        - (see other notes)
+      - request:
+        - `"My first request is ..."`
+    - prompt with end completion
+    - prompt with middle completion `"[insert]"`
+    - prompt with list continuation
+    - prompt with style modifiers
 - https://trydyno.com = playground
 - https://dust.tt/ = make LLM apps
 
