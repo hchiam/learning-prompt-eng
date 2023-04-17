@@ -106,22 +106,24 @@ export default function Home() {
     setEnableSubmit(false);
     setResult("");
 
-    callApiLocally();
+    // for local testing with API key set in .env file:
+    // callApiLocally();
 
-    // await callApi(
-    //   (result) => {
-    //     console.log(result);
-    //     setResult(result);
-    //     setEnableSubmit(true);
-    //   },
-    //   (error) => {
-    //     // Consider implementing your own error handling logic here
-    //     console.error(error);
-    //     alert(error);
-    //     setEnableSubmit(true);
-    //     setResult("");
-    //   }
-    // );
+    // for prod deploy with API key always required:
+    await callApi(
+      (result) => {
+        console.log(result);
+        setResult(result);
+        setEnableSubmit(true);
+      },
+      (error) => {
+        // Consider implementing your own error handling logic here
+        console.error(error);
+        alert(error);
+        setEnableSubmit(true);
+        setResult("");
+      }
+    );
   }
 
   return (
