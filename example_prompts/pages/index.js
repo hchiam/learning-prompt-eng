@@ -106,22 +106,22 @@ export default function Home() {
     setEnableSubmit(false);
     setResult("");
 
-    // callApiLocally();
+    callApiLocally();
 
-    await callApi(
-      (result) => {
-        console.log(result);
-        setResult(result);
-        setEnableSubmit(true);
-      },
-      (error) => {
-        // Consider implementing your own error handling logic here
-        console.error(error);
-        alert(error);
-        setEnableSubmit(true);
-        setResult("");
-      }
-    );
+    // await callApi(
+    //   (result) => {
+    //     console.log(result);
+    //     setResult(result);
+    //     setEnableSubmit(true);
+    //   },
+    //   (error) => {
+    //     // Consider implementing your own error handling logic here
+    //     console.error(error);
+    //     alert(error);
+    //     setEnableSubmit(true);
+    //     setResult("");
+    //   }
+    // );
   }
 
   return (
