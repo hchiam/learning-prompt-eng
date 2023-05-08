@@ -1,4 +1,4 @@
-# OpenAi/DeepLearning.AI Course Notes
+# OpenAI/DeepLearning.AI Course Notes
 
 ## ChatGPT Prompt Engineering for Developers
 
