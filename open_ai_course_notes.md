@@ -60,13 +60,30 @@ import openai
 openai.api_key = 'sk-...'
 
 def get_completion(prompt, model='gpt-3.5-turbo'):
+  """
+  returns just one response for one prompt
+  """
   messages = [{ 'role':'user', 'content':prompt }]
   response = openai.ChatCompletion.create(
     model=model,
     messages=messages,
     temperature=0, # 0 means no output randomness expected
   )
-  return response.choices[0].message["content"]
+  return response.choices[0].message['content']
+
+def get_completion_from_messages(messages, model='gpt-3.5-turbo', temperature=0):
+  """
+  To act like a chatbot with a list of messages.
+  Make sure to send and initial message {'role':'system', 'content':'You are an assistant that...'} to guide the chatbot without this content being part of the actual conversation.
+  Then {'role':'user','content':'...'}, {'role':'assistant','content':'...'}, ...
+  """
+  response = openai.ChatCompletion.create(
+    model=model,
+    messages=messages,
+    temperature=temperature,
+  )
+  print(str(response.choices[0].message))
+  return response.choices[0].message['content']
 
 text = f"""
 ...
@@ -86,11 +103,9 @@ print(response)
 
 ```py
 from IPython.display import display, Markdown, Latex, HTML, JSON
-display(HTML(response))
-```
-
-```py
 from redlines import Redlines
+
+display(HTML(response))
 
 diff = Redlines(text, response)
 display(Markdown(diff.output_markdown))
