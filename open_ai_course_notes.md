@@ -64,7 +64,7 @@ def get_completion(prompt, model='gpt-3.5-turbo'):
   response = openai.ChatCompletion.create(
     model=model,
     messages=messages,
-    temperature=0, # output randomness
+    temperature=0, # 0 means no output randomness expected
   )
   return response.choices[0].message["content"]
 
