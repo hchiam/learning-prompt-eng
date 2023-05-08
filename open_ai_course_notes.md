@@ -20,6 +20,7 @@ https://learn.deeplearning.ai/chatgpt-prompt-eng/
   - when your **app matures**, have your prompt **tested against many example test cases**
 - instead of "summarize", try "extract information relevant to (target audience)", and include a reference to the original text
 - instead of just "what's the sentiment", try "list out the emotions of" and "is the writer expressing (specific feeling important to client success department) on a scale" and other information in one prompt
+  - much faster than training a bunch of specializied NLP models with traditional ML!
 
 ## Example prompt template (WIP)
 
