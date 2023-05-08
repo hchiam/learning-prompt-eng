@@ -9,7 +9,7 @@
 
 More elaborate example: [check a table of contents for the most relevant documentation file to a user's question](https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/customer-support-demo/checkTableOfContents.js) and then [use that documentation text to generate an answer while citing reference and being instructed to not make up information that isn't in the docs and to fallback on telling the user to contact customer support, with attempted anti-injection/anti-leaking](https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/customer-support-demo/referToDoc.js).
 
-See my OpenAI/DeepLearning.AI notes for a template (WIP): https://github.com/hchiam/learning-prompt-eng/blob/main/open_ai_course_notes.md#example-prompt-template
+See my OpenAI/DeepLearning.AI notes for a template (WIP): https://github.com/hchiam/learning-prompt-eng/blob/main/open_ai_course_notes.md#example-prompt-template-wip
 
 ## Interactive demo
 
