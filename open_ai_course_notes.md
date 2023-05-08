@@ -15,6 +15,11 @@ https://learn.deeplearning.ai/chatgpt-prompt-eng/
 - model limitations
   - hallucinations: plausible but untrue statements (it hasn't perfectly memorized and doesn't know its own limitations)
     - tell the model to first find relevant quotes, then answer the question based on the quotes = way to trace information
+- **iterate** (>> perfect first try): **think** --> **make** --> **test** --> think --> ...
+  - to improve and polish towards your specific use case
+  - when your **app matures**, have your prompt **tested against many example test cases**
+
+## Notebook/Colab Python code
 
 ```sh
 pip install openai
