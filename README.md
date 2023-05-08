@@ -101,6 +101,7 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
     - prompt with middle completion `"[insert]"`
     - prompt with list continuation
     - prompt with style modifiers
+- OpenAI/DeepLearning.AI course notes and **example prompt template** (WIP): https://github.com/hchiam/learning-prompt-eng/blob/main/open_ai_course_notes.md#example-prompt-template
 - https://trydyno.com = playground
 - https://dust.tt/ = make LLM apps
 
