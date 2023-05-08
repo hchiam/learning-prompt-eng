@@ -19,6 +19,26 @@ https://learn.deeplearning.ai/chatgpt-prompt-eng/
   - to improve and polish towards your specific use case
   - when your **app matures**, have your prompt **tested against many example test cases**
 
+## Example prompt template
+
+```text
+Your goal/task is to
+
+Write a
+
+It is for
+
+Include at the end
+
+Format it as (with delimited examples if needed for your app)
+
+Check the input (and fallback if needed for your app)
+
+(lay out any helpful steps for the model to do to help itself think)
+
+(start the expected output to autocomplete)
+```
+
 ## Notebook/Colab Python code
 
 ```sh
