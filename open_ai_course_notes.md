@@ -19,6 +19,7 @@ https://learn.deeplearning.ai/chatgpt-prompt-eng/
   - to improve and polish towards your specific use case
   - when your **app matures**, have your prompt **tested against many example test cases**
 - instead of "summarize", try "extract information relevant to (target audience)", and include a reference to the original text
+- instead of just "what's the sentiment", try "list out the emotions of" and "is the writer expressing (specific feeling important to client success department) on a scale" and other information in one prompt
 
 ## Example prompt template (WIP)
 
@@ -33,11 +34,16 @@ It is for (target audience)
 
 Include at the end
 
-Format it as (HTML, or delimited by triple backticks, and give examples if needed for your app)
+Format it as (HTML, or JSON with keys named, or delimited by triple backticks, and give examples if needed for your app)
 
 Check the input (and fallback if needed for your app)
 
 (lay out any helpful steps for the model to do to help itself think)
+
+INPUT:
+---
+{input}
+---
 
 (start the expected output to autocomplete)
 ```
