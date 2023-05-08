@@ -83,3 +83,15 @@ response = get_completion(prompt)
 print("Completion for prompt:")
 print(response)
 ```
+
+```py
+from IPython.display import display, Markdown, Latex, HTML, JSON
+display(HTML(response))
+```
+
+```py
+from redlines import Redlines
+
+diff = Redlines(text, response)
+display(Markdown(diff.output_markdown))
+```
