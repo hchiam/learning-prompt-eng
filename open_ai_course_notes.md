@@ -18,6 +18,7 @@ https://learn.deeplearning.ai/chatgpt-prompt-eng/
 - **iterate** (>> perfect first try): **think** --> **make** --> **test** --> think --> ...
   - to improve and polish towards your specific use case
   - when your **app matures**, have your prompt **tested against many example test cases**
+- instead of "summarize", try "extract information relevant to (target audience)", and include a reference to the original text
 
 ## Example prompt template (WIP)
 
