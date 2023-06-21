@@ -134,3 +134,9 @@ You might be interested in the code related to generating prompts for the custom
 
 - https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/customer-support-demo/referToDoc.js
 - https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/antiIgnoreInstructions.js
+
+## Links to more learning
+
+https://github.com/hchiam/learning-ml
+
+https://github.com/hchiam/learning-gpt4all
