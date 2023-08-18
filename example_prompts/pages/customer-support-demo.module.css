@@ -71,6 +71,7 @@
   margin-top: 40px;
   padding: 2rem;
   max-width: 50ch;
+  overflow-wrap: anywhere;
 }
 .declutter {
   animation: declutter 0.2s both;
@@ -89,4 +90,8 @@
 .letter-count {
   text-align: right;
   margin-top: 0;
+}
+.center,
+.centre {
+  text-align: center;
 }

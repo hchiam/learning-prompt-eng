@@ -151,7 +151,7 @@ export default function CustomerSupportDemo() {
       </Head>
 
       <main className={styles.main}>
-        <p className={declutter ? styles.declutter : ""}>
+        <p className={declutter ? styles.declutter : styles.center}>
           To find or create your OpenAI API key, go to{" "}
           <a
             href="https://platform.openai.com/account/api-keys"

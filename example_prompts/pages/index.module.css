@@ -35,6 +35,7 @@
   font-weight: bold;
   color: #202123;
   margin: 16px 0 40px;
+  text-align: center;
 }
 .main form {
   display: flex;
@@ -72,6 +73,7 @@
   margin-top: 40px;
   padding: 2rem;
   max-width: 50ch;
+  overflow-wrap: anywhere;
 }
 .declutter {
   animation: declutter 0.2s both;
@@ -86,4 +88,8 @@
 }
 .api-key {
   width: 20ch;
+}
+.center,
+.centre {
+  text-align: center;
 }

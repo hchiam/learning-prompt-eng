@@ -8,10 +8,16 @@ import languageList from "../helpers/languageList";
 export default function Home() {
   const [keyInput, setKeyInput] = useState("");
   const [languageInput, setLanguageInput] = useState("");
+  const [lang, setLang] = useState("en");
   const [wordInput, setWordInput] = useState("");
   const [result, setResult] = useState("");
   const [enableSubmit, setEnableSubmit] = useState(true);
   const [declutter, setDeclutter] = useState(false);
+
+  function handleLanguageSelect(target) {
+    setLang(target.querySelectorAll('option')[target.selectedIndex]?.getAttribute('data-language-code') ?? '');
+    setLanguageInput(target.value);
+  }
 
   /** call generate.js if running locally */
   async function callApiLocally() {
@@ -134,7 +140,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <p className={declutter ? styles.declutter : ""}>
+        <p className={declutter ? styles.declutter : styles.center}>
           To find or create your OpenAI API key, go to{" "}
           <a
             href="https://platform.openai.com/account/api-keys"
@@ -165,13 +171,13 @@ export default function Home() {
           <select
             name="language"
             value={languageInput}
-            onChange={(e) => setLanguageInput(e.target.value)}
+            onChange={(e) => handleLanguageSelect(e.target)}
             disabled={!enableSubmit}
           >
             <option value="">- Please select -</option>
             {languageList().map((x, i) => (
-              <option key={i} value={x}>
-                {x}
+              <option key={i} value={x[0]} data-language-code={x[1]}>
+                {x[0]}
               </option>
             ))}
           </select>
@@ -182,6 +188,7 @@ export default function Home() {
             value={wordInput}
             onChange={(e) => setWordInput(limitInput(e.target.value))}
             disabled={!enableSubmit}
+            lang={lang}
           />
           <input
             type="submit"
