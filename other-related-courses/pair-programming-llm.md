@@ -159,6 +159,8 @@ model_bison
 
 # set up prompt
 
+# improve existing code:
+
 prompt_template = """
 I don't think this code is the best way to do it in Python, can you help me?
 
@@ -168,6 +170,8 @@ Please explain, in detail, what you did to improve it.
 """
 # or: Please explore multiple ways of solving the problem, and explain each.
 # or: Please explore multiple ways of solving the problem, and tell me which is the most Pythonic.
+
+# simplify:
 
 # prompt_template = """
 # Can you please simplify this code for a linked list in Python?
@@ -179,6 +183,8 @@ Please explain, in detail, what you did to improve it.
 # and explain in detail what you did to modify it, and why.
 # """
 
+# write test cases:
+
 # prompt_template = """
 # Can you please create test cases in code for this Python code?
 # 
@@ -187,6 +193,8 @@ Please explain, in detail, what you did to improve it.
 # Explain in detail what these test cases are designed to achieve.
 # """
 
+# make more efficient:
+
 # prompt_template = """
 # Can you please make this code more efficient?
 # 
@@ -194,6 +202,8 @@ Please explain, in detail, what you did to improve it.
 # 
 # Explain in detail what you changed and why.
 # """
+
+# debug:
 
 # prompt_template = """
 # Can you please help me to debug this code?
