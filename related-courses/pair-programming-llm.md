@@ -122,10 +122,10 @@ print(completion.result)
 
 ## pair programming scenarios
 
-- improve existing code
-- simplify code
-- write test cases for code
-- make code more efficient
+- improve existing code [I in AEIOU](https://github.com/hchiam/learning-interviews#:~:text=AEIOU)
+- simplify code [I in AEIOU](https://github.com/hchiam/learning-interviews#:~:text=AEIOU)
+- write test cases for code [U in AEIOU](https://github.com/hchiam/learning-interviews#:~:text=AEIOU)
+- make code more efficient [O in AEIOU](https://github.com/hchiam/learning-interviews#:~:text=AEIOU)
 - debug code
 
 ```py
