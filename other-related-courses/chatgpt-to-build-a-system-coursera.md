@@ -1,5 +1,7 @@
 # https://www.coursera.org/projects/building-systems-with-the-chatgpt-api-project
 
+https://learn.deeplearning.ai/chatgpt-building-system
+
 1. **chains of prompts** that interact with **completions of previous prompts**
 2. systems where **Python code** interacts with both **completions** and **new prompts**
 3. **customer service chatbot**
