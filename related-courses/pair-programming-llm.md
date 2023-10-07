@@ -218,3 +218,62 @@ print(completion.result)
 
 # _**REMINDER:**_ output -> read, understand, try, test cases BEFORE using in production. 
 ```
+
+## help with techcical debt
+
+- understand a large block of unfamiliar old code
+- document a large block of unfamiliar old code, in markdown output format
+
+```py
+import os
+from utils import get_api_key
+import google.generativeai as palm
+from google.api_core import client_options as client_options_lib
+
+palm.configure(
+    api_key=get_api_key(),
+    transport="rest",
+    client_options=client_options_lib.ClientOptions(
+        api_endpoint=os.getenv("GOOGLE_API_BASE"),
+    )
+)
+
+from google.api_core import retry
+@retry.Retry()
+def generate_text(prompt, 
+                  model=model_bison, 
+                  temperature=0.0):
+    return palm.generate_text(prompt=prompt,
+                              model=model,
+                              temperature=temperature)
+
+models = [m for m in palm.list_models() if 'generateText' in m.supported_generation_methods]
+model_bison = models[0]
+model_bison
+
+CODE_BLOCK = """
+...(your code here)...
+"""
+
+prompt_template = """
+Can you please explain how this code works?
+
+{question}
+
+Use a lot of detail and make it as clear as possible.
+"""
+
+# prompt_template = """
+# Please write technical documentation for this code and \n
+# make it easy for a non Python developer to understand:
+# 
+# {question}
+# 
+# Output the results in markdown
+# """
+
+completion = generate_text(
+    prompt = prompt_template.format(question=CODE_BLOCK)
+)
+print(completion.result)
+```
