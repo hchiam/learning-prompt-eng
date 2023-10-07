@@ -231,8 +231,8 @@ print(completion.result)
 
 ## help with techcical debt
 
-- understand a large block of unfamiliar old code
-- document a large block of unfamiliar old code, in markdown output format
+- to understand a large block of unfamiliar old code
+- to document a large block of unfamiliar old code, in markdown output format
 
 ```py
 import os
@@ -261,6 +261,8 @@ models = [m for m in palm.list_models() if 'generateText' in m.supported_generat
 model_bison = models[0]
 model_bison
 
+# to understand:
+
 CODE_BLOCK = """
 ...(your code here)...
 """
@@ -272,6 +274,8 @@ Can you please explain how this code works?
 
 Use a lot of detail and make it as clear as possible.
 """
+
+# to document:
 
 # prompt_template = """
 # Please write technical documentation for this code and \n
