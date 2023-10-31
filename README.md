@@ -135,6 +135,10 @@ You might be interested in the code related to generating prompts for the custom
 - https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/customer-support-demo/referToDoc.js
 - https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/antiIgnoreInstructions.js
 
+## Example [bookmarklet](https://github.com/hchiam/learning-js/tree/main/bookmarklets#bookmarklets)
+
+https://github.com/hchiam/learning-js/blob/main/bookmarklets/highlightAndSummarizeText.js
+
 ## Links to more learning
 
 https://github.com/hchiam/learning-ml
