@@ -32,6 +32,10 @@ You might be interested in the code related to generating prompts for the custom
 - https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/customer-support-demo/referToDoc.js
 - https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/antiIgnoreInstructions.js
 
+From [Thomas Frank](https://github.com/TomFrankly): https://www.youtube.com/watch?v=NpUuuT_EzSs
+
+- try this in ChatGPT: "How would a senior JS dev improve this code? For each suggested improvement, please explain why you’ve suggested it as if I’m a student unaware of it." --> for context-specific explanations + uncover “2nd-order incompetence” / unknown blindspots. 
+
 ## Example [bookmarklet](https://github.com/hchiam/learning-js/tree/main/bookmarklets#bookmarklets)
 
 https://github.com/hchiam/learning-js/blob/main/bookmarklets/highlightAndSummarizeText.js
