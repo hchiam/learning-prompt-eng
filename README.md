@@ -5,7 +5,44 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 - prompt engineering is apparently around 2-3 years old! (as of 2023)
 - do prompt engineering to most effectively use new models as they currently are?
 
-## Read
+## According to https://chat.openai.com:
+
+<img src="https://github.com/hchiam/learning-prompt-eng/raw/main/example_prompts/1b_Prompt_Engineering_Explanation_ELI5.png" height="500rem">
+
+## Example prompts ([`/example_prompts`](https://github.com/hchiam/learning-prompt-eng/tree/main/example_prompts#example-prompts))
+
+https://github.com/hchiam/learning-prompt-eng/tree/main/example_prompts#example-prompts
+
+https://hchiam-example-prompts.surge.sh
+
+https://hchiam-example-prompts.surge.sh/customer-support-demo (cites docs)
+
+or try it locally with your OpenAI API key set up in `example_prompts/.env`:
+
+```sh
+cd example_prompts
+npm install # or yarn
+
+npm run dev # or yarn dev
+# http://localhost:3000/
+```
+
+You might be interested in the code related to generating prompts for the customer support demo, for example:
+
+- https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/customer-support-demo/referToDoc.js
+- https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/antiIgnoreInstructions.js
+
+## Example [bookmarklet](https://github.com/hchiam/learning-js/tree/main/bookmarklets#bookmarklets)
+
+https://github.com/hchiam/learning-js/blob/main/bookmarklets/highlightAndSummarizeText.js
+
+## Links to more learning
+
+https://github.com/hchiam/learning-ml
+
+https://github.com/hchiam/learning-gpt4all
+
+## Read + initial research
 
 - **_what is it?_** how to prompt language AIs like ChatGPT to do what you intended, while avoiding known issues (basically adding text around the user input to prime the model for the kinds of output it should give, like giving it context for the input and a description of the expected output, and even the start of the expected output) https://en.wikipedia.org/wiki/Prompt_engineering and https://fourweekmba.com/prompt-engineering/
   - **_treat LLMs (Large Language Models) like autocomplete engines and pattern-matching generators:_** zero-shot, one-shot, few-shot prompting: https://www.youtube.com/watch?v=v2gD8BHOaX4
@@ -104,43 +141,3 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 - OpenAI/DeepLearning.AI course notes and **example prompt template** (WIP): https://github.com/hchiam/learning-prompt-eng/blob/main/open_ai_course_notes.md#example-prompt-template-wip
 - https://trydyno.com = playground
 - https://dust.tt/ = make LLM apps
-
-<hr>
-<hr>
-
-## According to https://chat.openai.com:
-
-<img src="https://github.com/hchiam/learning-prompt-eng/raw/main/example_prompts/1b_Prompt_Engineering_Explanation_ELI5.png" height="500rem">
-
-## Example prompts ([`/example_prompts`](https://github.com/hchiam/learning-prompt-eng/tree/main/example_prompts#example-prompts))
-
-https://github.com/hchiam/learning-prompt-eng/tree/main/example_prompts#example-prompts
-
-https://hchiam-example-prompts.surge.sh
-
-https://hchiam-example-prompts.surge.sh/customer-support-demo (cites docs)
-
-or try it locally with your OpenAI API key set up in `example_prompts/.env`:
-
-```sh
-cd example_prompts
-npm install # or yarn
-
-npm run dev # or yarn dev
-# http://localhost:3000/
-```
-
-You might be interested in the code related to generating prompts for the customer support demo, for example:
-
-- https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/customer-support-demo/referToDoc.js
-- https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/antiIgnoreInstructions.js
-
-## Example [bookmarklet](https://github.com/hchiam/learning-js/tree/main/bookmarklets#bookmarklets)
-
-https://github.com/hchiam/learning-js/blob/main/bookmarklets/highlightAndSummarizeText.js
-
-## Links to more learning
-
-https://github.com/hchiam/learning-ml
-
-https://github.com/hchiam/learning-gpt4all
