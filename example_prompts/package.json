@@ -5,7 +5,7 @@
     "start": "next start",
     "build": "next build",
     "export": "next export",
-    "deploy": "next build; next export; npx surge ./out https://hchiam-example-prompts.surge.sh; open https://hchiam-example-prompts.surge.sh;"
+    "deploy": "next build; next export; surge ./out https://hchiam-example-prompts.surge.sh; open https://hchiam-example-prompts.surge.sh;"
   },
   "dependencies": {
     "next": "^13.1.1",
