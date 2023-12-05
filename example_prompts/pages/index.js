@@ -71,7 +71,7 @@ export default function Home() {
       const prompt = generatePrompt(languageInput, wordInput);
       console.log(prompt);
       const completion = await openai.createCompletion({
-        model: "text-davinci-003", // to follow instructions, instead of pattern matching davinci
+        model: "gpt-3.5-turbo-instruct", // to follow instructions, instead of pattern matching davinci
         prompt: prompt,
         temperature: 0.6,
         max_tokens: 500,

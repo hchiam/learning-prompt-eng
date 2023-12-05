@@ -51,7 +51,7 @@ export default async function (req, res) {
 
     const prompt = checkTableOfContents(userPrompt);
     const completion = await openai.createCompletion({
-      model: "text-davinci-003", // to follow instructions, instead of pattern matching davinci
+      model: "gpt-3.5-turbo-instruct", // to follow instructions, instead of pattern matching davinci
       prompt: prompt,
       temperature: 0.6,
       max_tokens: 500,
