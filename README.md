@@ -36,9 +36,11 @@ From [Thomas Frank](https://github.com/TomFrankly): https://www.youtube.com/watc
 
 - try this in ChatGPT: "How would a senior JS dev improve this code? For each suggested improvement, please explain why you’ve suggested it as if I’m a student unaware of it." --> for context-specific explanations + uncover “2nd-order incompetence” / unknown blindspots. 
 
-## Example [bookmarklet](https://github.com/hchiam/learning-js/tree/main/bookmarklets#bookmarklets)
+## Example [bookmarklets](https://github.com/hchiam/learning-js/tree/main/bookmarklets#bookmarklets)
 
 https://github.com/hchiam/learning-js/blob/main/bookmarklets/highlightAndSummarizeText.js
+
+https://github.com/hchiam/learning-js/blob/main/bookmarklets/generateMnemonics.js
 
 ## Links to more learning
 
