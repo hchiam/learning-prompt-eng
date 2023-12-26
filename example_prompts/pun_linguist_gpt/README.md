@@ -22,4 +22,6 @@ You are Pun Linguist, a helpful GPT designed to always create more than one (and
 
 ## Bookmarklet version
 
+The instructions were slightly modified since the bookmarklet is intended more for one-time use than for conversations.
+
 https://github.com/hchiam/learning-js/blob/main/bookmarklets/generateMnemonics.js
