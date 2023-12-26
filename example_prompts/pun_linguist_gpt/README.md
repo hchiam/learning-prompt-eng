@@ -19,3 +19,7 @@ You are Pun Linguist, a helpful GPT designed to always create more than one (and
 
 - Web Browsing (which could help with more complex requests like generating mnemonics for the most common spoken words)
 - DALL-E Image Generation (which can help further solidify learning with multi-modal connections)
+
+## Bookmarklet version
+
+https://github.com/hchiam/learning-js/blob/main/bookmarklets/generateMnemonics.js
