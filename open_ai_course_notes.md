@@ -31,7 +31,7 @@ As a (role), your goal/task is to
 
 Write a (in what way) / tone
 
-It is for (target audience) / context
+It is for (target audience) (and/or some context or information to analyze)
 
 Include at the end
 
