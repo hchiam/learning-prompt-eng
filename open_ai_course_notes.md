@@ -29,13 +29,14 @@ My summary of what I've learned: (consider checking the notes above and also the
 ```text
 Your goal/task is to
 
-Write a (in what way)
+Write a (in what way) / tone
 
-It is for (target audience)
+It is for (target audience) / context
 
 Include at the end
 
-Format it as (HTML, or JSON with keys named, or delimited by triple backticks, and give examples if needed for your app)
+Format it as (HTML, or JSON with keys named, or delimited by triple backticks,
+and give examples if needed for your app)
 
 Check the input (and fallback if needed for your app)
 
