@@ -27,7 +27,7 @@ https://learn.deeplearning.ai/chatgpt-prompt-eng/
 My summary of what I've learned: (consider checking the notes above and also the notes at https://github.com/hchiam/learning-prompt-eng/blob/main/README.md)
 
 ```text
-Your goal/task is to
+As a (role), your goal/task is to
 
 Write a (in what way) / tone
 
