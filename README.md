@@ -13,6 +13,8 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 https://github.com/hchiam/learning-prompt-eng/tree/main/example_prompts#example-prompts
 
+https://chat.openai.com/g/g-RsoXtrv5O-pun-linguist
+
 https://hchiam-example-prompts.surge.sh
 
 https://hchiam-example-prompts.surge.sh/customer-support-demo (cites docs)
