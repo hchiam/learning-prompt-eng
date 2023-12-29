@@ -13,7 +13,7 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 https://github.com/hchiam/learning-prompt-eng/tree/main/example_prompts#example-prompts
 
-https://chat.openai.com/g/g-RsoXtrv5O-pun-linguist
+https://chat.openai.com/g/g-RsoXtrv5O-pun-linguist (see [my Pun Linguist notes](https://github.com/hchiam/learning-prompt-eng/tree/main/example_prompts/pun_linguist_gpt))
 
 https://hchiam-example-prompts.surge.sh
 
