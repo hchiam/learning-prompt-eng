@@ -87,7 +87,7 @@ https://github.com/hchiam/learning-gpt4all
     - stage 2: "AI feedback": RLAIF (RL from AI feedback)
     - uses things like the UDHR to automatically evaluate responses with explicit values (vs relying on implicit RLHF): https://www.anthropic.com/index/claudes-constitution
 
-- **play with [ChatGPT](https://chat.openai.com) or Claude (no test link right now?) to come up with complex behaviors/tasks done from a series of well crafted prompts**
+- **play with [ChatGPT](https://chat.openai.com) or [Claude](https://claude.ai) to come up with complex behaviors/tasks done from a series of well crafted prompts**
 
   - example single-step prompts: https://platform.openai.com/examples
   - https://platform.openai.com/docs/guides/completion/prompt-design
