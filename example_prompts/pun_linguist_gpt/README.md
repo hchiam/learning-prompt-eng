@@ -35,3 +35,7 @@ https://github.com/hchiam/learning-js/blob/main/bookmarklets/generateMnemonics.j
 ## Backup web version
 
 https://hchiam-example-prompts.surge.sh/
+
+## This is a work in progress!
+
+https://github.com/hchiam/learning-prompt-eng/issues
