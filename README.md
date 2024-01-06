@@ -172,3 +172,4 @@ https://github.com/hchiam/learning-gpt4all
 - OpenAI/DeepLearning.AI course notes and **example prompt template** (WIP): https://github.com/hchiam/learning-prompt-eng/blob/main/open_ai_course_notes.md#example-prompt-template-wip
 - https://trydyno.com = playground
 - https://dust.tt/ = make LLM apps
+- https://platform.openai.com/tokenizer = get the number of tokens in a prompt, as well as the breakdown of the prompt into the tokens
