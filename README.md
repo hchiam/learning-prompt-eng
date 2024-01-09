@@ -72,6 +72,7 @@ https://github.com/hchiam/learning-gpt4all
         - [generated knowledge / knowledge-augmented questions](https://learnprompting.org/docs/intermediate/generated_knowledge) = 2 strats:
           - e.g. `Generate 4 facts about ... Then use these facts to write a short blog post using the information:`
           - e.g. `Generate 4 facts about ...` --> `(...facts here...) Use the above facts to write a short blog post about ...` Or `(...country size facts here...) Which country is larger?`
+          - it's like getting the LLM to read its own memory
           - either way, you can then generate multiple answers and take the majority answer as the overall final answer (see [self-consistency](https://learnprompting.org/docs/intermediate/self_consistency) note above)
   - remember: you can even ask the model to generate prompts!
   - [make outputs more reliable](https://learnprompting.org/docs/category/%EF%B8%8F-reliability):
