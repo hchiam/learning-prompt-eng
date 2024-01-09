@@ -1,0 +1,25 @@
+What is 1+2?
+Let's think step by step.
+1+2=3
+Double-checking with JS:
+```js
+1+2
+// output: 3
+```
+Answer: 3
+
+What is 13*12?
+Let's think step by step.
+13*10=130
+13*2=26
+130+26=156
+Double-checking with JS:
+```js
+13*12
+// output: 156
+```
+Answer: 156
+
+
+What is 4349*4434?
+Let's think step by step.
