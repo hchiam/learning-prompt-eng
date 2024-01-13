@@ -2,7 +2,7 @@
 
 ## Description
 
-Creates pun-based mnemonics to help with remembering words in other languages.
+Creates pun-based mnemonics to help with remembering words in other languages. Make learning language vocab more fun!
 
 ## Instructions
 
