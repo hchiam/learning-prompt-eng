@@ -39,3 +39,7 @@ https://hchiam-example-prompts.surge.sh/
 ## This is a work in progress!
 
 https://github.com/hchiam/learning-prompt-eng/issues
+
+## GPT store
+
+You can discover custom GPTs that other people have made at: https://chat.openai.com/gpts
