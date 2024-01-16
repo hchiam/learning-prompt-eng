@@ -132,6 +132,8 @@ https://github.com/hchiam/learning-gpt4all
         
         {{question}}
         ```
+    - [interesting bits of Prompting Techniques for Claude 2.1](https://docs.anthropic.com/claude/docs/claude-2p1-guide#prompting-techniques-for-claude-21)
+      - instead of "task <data>", do "(carefully read) <data> task" (and maybe end with "<guidelines>" reminders before user query)
     - [Guide to Anthropic's prompt engineering resources](https://docs.anthropic.com/claude/docs/guide-to-anthropics-prompt-engineering-resources), including Messages API, etc.
   - [Prompting tips for Claude.ai](https://www.youtube.com/watch?v=OfUn6HjwXhI)
     - "specifically" explain task
