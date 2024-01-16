@@ -132,7 +132,13 @@ https://github.com/hchiam/learning-gpt4all
         
         {{question}}
         ```
-    - [Guide to Anthropic's prompt engineering resources](https://docs.anthropic.com/claude/docs/guide-to-anthropics-prompt-engineering-resources), including Messages API, etc. 
+    - [Guide to Anthropic's prompt engineering resources](https://docs.anthropic.com/claude/docs/guide-to-anthropics-prompt-engineering-resources), including Messages API, etc.
+  - [Prompting tips for Claude.ai](https://www.youtube.com/watch?v=OfUn6HjwXhI)
+    - "specifically" explain task
+    - xml indications like `<question>`, `<text>`, etc.
+    - `<example>`s
+    - context files
+    - `<thinking>` before `<answer>`
 
 - **_explore examples?_**
   - remember: you can even ask the model to generate prompts!
