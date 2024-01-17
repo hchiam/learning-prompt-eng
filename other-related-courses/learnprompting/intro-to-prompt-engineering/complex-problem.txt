@@ -1,0 +1,4 @@
+20 marbles were pulled out of a bag of only white marbles. They were painted black, and then put back in. Then, another 20 marbles were pulled out, of which 1 was black, after which they were all returned to the bag. If the percentage of black marbles pulled out the second time represents their percentage in the bag, how many marbles in total does the bag hold? 
+
+Careful with the wording! Don't jump to conclusions. Be careful with making assumptions that may not necessarily be true. Rephrase the question and then break this into subproblems.
+  
