@@ -11,8 +11,6 @@ feminine 	katáb-ti 	ti-ktíb-i 	bi-ti-ktíb-i 	ḥa-ti-ktíb-i 	i-ktíb-i
 3rd 	masculine 	kátab 	kátab-u 	yí-ktib 	yi-ktíb-u 	bi-yí-ktib 	bi-yi-ktíb-u 	ḥa-yí-ktib 	ḥa-yi-ktíb-u 	
 feminine 	kátab-it 	tí-ktib 	bi-tí-ktib 	ḥa-tí-ktib
 
-Note that, in general, the present indicative is formed from the subjunctive by the addition of bi- (bi-a- is elided to ba-). Similarly, the future is formed from the subjunctive by the addition of ḥa- (ḥa-a- is elided to ḥa-).
-
 # Task:
 
 What is one of the prefixes that can be used for the future tense for regular verbs in Egyptian Arabic. 
