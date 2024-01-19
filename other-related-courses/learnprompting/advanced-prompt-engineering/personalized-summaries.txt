@@ -1,0 +1,21 @@
+# Examples from Duolingo blog: 
+
+Text: One of my most prominent blunders these days is mispronouncing the tens (20, 30, 40, etc, to 90) when I speak Spanish. Instead of saying the -enta ending (as in cuarenta for "forty"), I use -anta as the ending. It can be frustrating that I have to focus so much to only *sometimes* get this right, but it's just my brain applying another rule it learned years before I spoke Spanish: -anta is indeed the correct ending for tens… in Italian, another language I speak! This is a classic case of language interference. 
+
+Summary: tens (20, 30, 40, etc. to 90) end with -enta in Spanish (vs -anta in Italian). 
+
+Text: The Italian verb stare literally means "to be," and it is usually restricted to asking how someone is doing (Come stai? for "How are you?") and describing an action that is happening right now (Sto scrivendo un articolo for "I’m writing an article"). But over the past few years, I’ve found myself wanting to use stare all over the place, especially to ask where things are. So instead of Dov’è il libro? (Where is the book) with the verb essere (another way to say "to be"), I want to ask Dove sta il libro? This would be fine in some dialects of Italian, but in standard Italian—the only variety I’ve studied—you use essere and not stare. So why do I do this? Some of you may have already guessed it: It's due to the influence of Spanish and Portuguese! Both of them have a verb estar (a cognate of Italian stare), which is typically used to ask where things are located. Another perfectly normal case of language interference! 
+
+Summary: standard Italian stare = current action or how you're doing; standard Italian essere = location. (vs Spanish/Portuguese estar = location) 
+
+Text: I started learning Basque a few months ago and it has been a blast! It's spoken in northern Spain and southwestern France and isn't related to any other language. One thing I did not expect to struggle with when I first started is how to say “I”... Basque uses different words for "I" depending on the sentence! Basque is an ergative language: It treats the subjects of transitive verbs (like "to want") differently from intransitive verbs (like "to go"), so in Basque, the subject of I go to the beach every day is ni, and the subject of I want to eat pintxos is nik. Basque is the first ergative language I've studied, and I can feel my brain working hard not only to create these new categories but also to retrieve that information instantly when I form sentences. Thank you, brain! 
+
+Summary: Basque ni = I (transitive subject, e.g. I want something); Basque nik = I (intransitive subject, e.g. I go). 
+
+# Task: 
+
+Give a terse summary of the following text. The summary shouldn't be a proper grammatical sentence, but rather optimized for key words capture as much info in few words and specific examples mentioned in the text. 
+
+Text: Word order is another important difference between French and English, especially when it comes to nouns. In French, most adjectives come after the noun they describe, so instead of saying the black cat, in French you say the cat black (le chat noir). You can think of the order like a formula: determiner (like "the" or "a") + noun + adjective, where "determiner" means the words for "the" (le, la, l', les) and for possession (like mon, "my," and notres, "our"). There are some common adjectives that must go before the noun, for example, adjectives about size or goodness (or badness!), including bon (good), petit (small), and grand (big). So, to say "the big red house," you say la grosse maison rouge. 
+
+Summary: 
