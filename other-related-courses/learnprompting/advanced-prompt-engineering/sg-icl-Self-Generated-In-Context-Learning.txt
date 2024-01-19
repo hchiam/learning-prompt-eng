@@ -1,0 +1,20 @@
+User:
+Generate 3 short examples of FAQs (Questions + Answers) for the language learning app Duolingo. 
+
+ChatGPT:
+Sure, here are three short examples of FAQs for Duolingo:
+
+1. Question: How much does Duolingo cost?
+Answer: Duolingo offers both a free and a paid version. You can access most features for free, but Duolingo Plus, the premium subscription, is available for $9.99 per month. It provides an ad-free experience, offline access, and more.
+
+2. Question: Can I learn multiple languages simultaneously on Duolingo?
+Answer: Yes, you can! Duolingo allows you to learn multiple languages at the same time. You can switch between languages in the app and work on different language courses based on your preferences.
+
+3. Question: How long does it take to become fluent using Duolingo?
+Answer: Becoming fluent in a language depends on various factors, including your dedication and practice. Duolingo is a great tool to start your language learning journey, but it's essential to complement it with real-world practice and immersion. Progress varies from person to person.
+
+User:
+Question: What languages are available on Duolingo?
+
+ChatGPT:
+Answer: Duolingo offers a wide range of languages for learners. Some of the popular languages available include Spanish, French, German, Italian, Portuguese, Chinese, Japanese, Russian, and Arabic. In total, Duolingo provides courses in over 40 languages, allowing you to choose the one that interests you the most or fits your language learning goals.
