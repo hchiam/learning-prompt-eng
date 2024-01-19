@@ -14,7 +14,7 @@ Summary: Basque ni = I (transitive subject, e.g. I want something); Basque nik =
 
 # Task: 
 
-Give a terse summary of the following text. The summary shouldn't be a proper grammatical sentence, but rather optimized for key words capture as much info in few words and specific examples mentioned in the text. 
+Give a terse summary of the following text. The summary shouldn't be a proper grammatical sentence, but rather optimized for key words to capture as much info in few words and specific examples mentioned in the text. For example, pseud-formulas. 
 
 Text: Word order is another important difference between French and English, especially when it comes to nouns. In French, most adjectives come after the noun they describe, so instead of saying the black cat, in French you say the cat black (le chat noir). You can think of the order like a formula: determiner (like "the" or "a") + noun + adjective, where "determiner" means the words for "the" (le, la, l', les) and for possession (like mon, "my," and notres, "our"). There are some common adjectives that must go before the noun, for example, adjectives about size or goodness (or badness!), including bon (good), petit (small), and grand (big). So, to say "the big red house," you say la grosse maison rouge. 
 
