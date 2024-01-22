@@ -83,6 +83,7 @@ https://github.com/hchiam/learning-gpt4all
     - provide diverse prompts --> diverse completions --> verifier on answers and verifier on reasoning steps
     - make the LLM evaluate its own answer: e.g. `Q: ...? A: ... Do you think (...) is really the correct answer?` --> let the AI respond Yes/No. Similar things can be done for checking if the answer is following guidelines and then asking the AI to respond with some kind of revised response to actually show the user.
     - calibrate LLMs: provide a neutral prompt, see how well the probability distribution of response classes matches random vs biased
+
 - **_read up on Claude vs ChatGPT:_** https://pub.towardsai.net/the-ai-behind-claude-the-chatgpt-competitor-that-has-raised-over-1-billion-5e60823a2dee?gi=ebedf7e219e4
 
   - CAI = Constitutional AI = improvement on RLHF (Reinforcement Learning from Human Feedback) by not requiring human feedback labels for harmfulness, and to train through principles like a "constitution":
@@ -180,7 +181,11 @@ https://github.com/hchiam/learning-gpt4all
     - prompt with middle completion `"[insert]"`
     - prompt with list continuation
     - prompt with style modifiers
-- OpenAI/DeepLearning.AI course notes and **example prompt template** (WIP): https://github.com/hchiam/learning-prompt-eng/blob/main/open_ai_course_notes.md#example-prompt-template-wip
+
+## Miscellaneous resources and notes
+
+- **my example prompt template** (WIP) and OpenAI/DeepLearning.AI course notes: https://github.com/hchiam/learning-prompt-eng/blob/main/open_ai_course_notes.md#example-prompt-template-wip
 - https://trydyno.com = playground
 - https://dust.tt/ = make LLM apps
-- https://platform.openai.com/tokenizer = get the number of tokens in a prompt, as well as the breakdown of the prompt into the tokens
+- https://platform.openai.com/tokenizer = get number of tokens in a prompt, and breakdown of prompt into tokens
+- tip: include in the prompt to ask the user for feedback or clarification or details (better performance + user engagement) https://www.youtube.com/watch?v=s4YKMFFiySI
