@@ -1,0 +1,15 @@
+Scenario: 
+You are an engineer estimating the cost of materials for a small building project.
+
+Objective: 
+Calculate the total estimated cost for a construction project using whichever thought generation prompting method is most applicable.
+
+Data Provided: 
+- Lumber costs $15 per foot.
+- You need 200 feet of lumber.
+- Nails cost $5 per box.
+- You need 10 boxes of nails per 100 feet of lumber.
+- Labor costs are $50 per hour.
+- Estimated labor time is 40 hours unless you use more than 10 boxes of nails, in which case they will be equal to the number of feet of lumber plus the cost of all boxes of nails.
+
+Walk me through this context in manageable parts step by step, summarizing and analyzing as we go:
