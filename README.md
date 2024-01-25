@@ -184,10 +184,11 @@ https://github.com/hchiam/learning-gpt4all
 
 ## Miscellaneous resources and notes
 
-- **my example prompt template** (WIP) and OpenAI/DeepLearning.AI course notes: https://github.com/hchiam/learning-prompt-eng/blob/main/open_ai_course_notes.md#example-prompt-template-wip
-- https://trydyno.com = playground
-- https://dust.tt/ = make LLM apps
-- https://platform.openai.com/tokenizer = get number of tokens in a prompt, and breakdown of prompt into tokens
+- **my example prompt template** (WIP) and OpenAI/DeepLearning.AI course notes:
+  - https://github.com/hchiam/learning-prompt-eng/blob/main/open_ai_course_notes.md#example-prompt-template-wip
+- playground: https://trydyno.com
+- make LLM apps: https://dust.tt/
+- prompt token count and breakdown: https://platform.openai.com/tokenizer
 - tip: include in the prompt to ask the user for feedback or clarification or details (better performance + user engagement) https://www.youtube.com/watch?v=s4YKMFFiySI
 - **SG-ICL** = Self-Generated In-Context Learning = get the LLM to generate the one/few-shot examples for you (if you can't get high-quality examples yourself)
 - **ThoT** = Thread-of-Thought = zero-shot-CoT but instead end with "Walk me through this context in manageable parts step by step, summarizing and analyzing as we go." (good for long, complicated context text)
