@@ -2,7 +2,7 @@ Scenario:
 You are an engineer estimating the cost of materials for a small building project.
 
 Objective: 
-Calculate the total estimated cost for a construction project using whichever thought generation prompting method is most applicable.
+Calculate the total estimated cost for a construction project.
 
 Data Provided: 
 - Lumber costs $15 per foot.
