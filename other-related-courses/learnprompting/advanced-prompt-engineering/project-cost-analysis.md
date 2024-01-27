@@ -2,6 +2,8 @@
 
 You might find this file easier to read on GitHub: https://github.com/hchiam/learning-prompt-eng/blob/main/other-related-courses/learnprompting/advanced-prompt-engineering/project-cost-analysis.md
 
+Based on re-running each of the following in separate chats with ChatGPT 3.5, it seems SA worked the most consistently, and when it didn't get the exact answer, it at least returned a number closer to what I expected the answer to be. With this as the rough criteria, SA surprisingly performed better than CCoT (I tried using `<non-example>` and `<incorrect-example>` and `# INCORRECT example:`) - maybe the incorrect example confused the LLM. Most of the strategies other than SA usually didn't give the correct answer, returning much smaller numbers.
+
 ## CoT
 
 <details>
@@ -320,6 +322,8 @@ What is the total estimated cost for the construction project?
 </details>
 
 ## Tab-CoT withOUT question marks
+
+This seemed to work more often than the previous version WITH question marks does.
 
 <details>
 <summary>click to expand</summary>
