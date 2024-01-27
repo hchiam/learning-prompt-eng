@@ -12,4 +12,4 @@ Data Provided:
 - Labor costs are $50 per hour.
 - Estimated labor time is 40 hours unless you use more than 10 boxes of nails, in which case they will be equal to the number of feet of lumber plus the cost of all boxes of nails.
 
-Walk me through this context in manageable parts step by step, summarizing and analyzing as we go:
+Be careful with units. Walk me through this context in manageable parts step by step, summarizing and analyzing as we go:
