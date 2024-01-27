@@ -1,5 +1,7 @@
 # project cost analysis with different methods
 
+You might find this file easier to read on GitHub: https://github.com/hchiam/learning-prompt-eng/blob/main/other-related-courses/learnprompting/advanced-prompt-engineering/project-cost-analysis.md
+
 ## CoT
 
 <details>
