@@ -323,7 +323,7 @@ What is the total estimated cost for the construction project?
 
 </details>
 
-## Tab-CoT withOUT question marks
+## Tab-CoT withOUT question marks in intermediate results column
 
 This seemed to work more often than the previous version WITH question marks does.
 
