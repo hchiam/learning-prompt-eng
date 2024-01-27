@@ -193,7 +193,7 @@ https://github.com/hchiam/learning-gpt4all
 - **_SG-ICL_** = Self-Generated In-Context Learning = get the LLM to generate the one/few-shot examples for you (if you can't get high-quality examples yourself)
 - **_ThoT_** = Thread-of-Thought = zero-shot-CoT but instead end with "Walk me through this context in manageable parts step by step, summarizing and analyzing as we go." (good for long, complicated context text)
 - **_Contrastive CoT_** = few-shot-CoT but with an incorrect example (non-example) also provided ("Correct explanation: ..." + "Incorrect explanation: ..."), which helps give explicit advice on mistakes to avoid
-- **_SA_** = Self-Ask = give an example of "Question: -> Are follow up questions needed here: Yes. -> Follow up: -> Intermediate answer: -> ... -> So the final answer is:" then start with the next "Question: ... Are follow up questions needed here:"
+- **_SA_** = Self-Ask = give an example of "Question: -> Are follow-up questions needed here: Yes. -> Follow-up: -> Intermediate answer: -> ... -> So the final answer is:" then start with the next "Question: ... Are follow-up questions needed here:"
 - **_Tab-CoT_** = Tabular CoT = reason both horizontally and vertically, with column headings relevant to the task at hand
   - e.g.: end prompt with markdown `|step|question|response|`
   - e.g.: end prompt with markdown `|step|subquestion|procedure|result|`
