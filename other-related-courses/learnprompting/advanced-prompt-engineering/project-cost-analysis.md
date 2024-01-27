@@ -281,7 +281,7 @@ Are follow-up questions needed here?
 
 </details>
 
-## Tab-CoT WITH question marks
+## Tab-CoT WITH question marks in intermediate results column
 
 <details>
 <summary>click to expand</summary>
