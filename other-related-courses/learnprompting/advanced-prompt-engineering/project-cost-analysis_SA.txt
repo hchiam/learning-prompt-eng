@@ -63,7 +63,7 @@ Labor cost = $20 / hour * 33 hours = ($20 * 33 / 1) = $660.
 So the final answer is:
 Total estimated cost = planks cost + nails cost + labor cost = $150 + $3 + $660 = $813.
 $813.
-<example>
+</example>
 
 What is the total estimated cost for the construction project?
 - Lumber costs $15 per foot.
