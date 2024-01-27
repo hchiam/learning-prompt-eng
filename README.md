@@ -74,7 +74,9 @@ https://github.com/hchiam/learning-gpt4all
           - e.g. `Generate 4 facts about ...` --> `(...facts here...) Use the above facts to write a short blog post about ...` Or `(...country size facts here...) Which country is larger?`
           - it's like getting the LLM to read its own memory
           - either way, you can then generate multiple answers and take the majority answer as the overall final answer (see [self-consistency](https://learnprompting.org/docs/intermediate/self_consistency) note above)
-        - similar to CoT: **least-to-most** (LTM) = subtasks/subquestions with no explicit sequence, instead of a linear sequence of thoughts.
+        - similar to CoT: **least-to-most** (LtM) = subtasks/subquestions with no explicit sequence, instead of a linear sequence of thoughts.
+          - NOTE: LtM works better if you show how to (recursively) break into subproblems.
+          - NOTE: you might also want to send the subproblems to the LLM as _separate_ prompts (with the responses for the preceding subproblems in the text).
         - **"emotional prompting"** = encouraging tone to the LLM, or emotion of the purpose. simple but seems to work.
   - remember: you can even ask the model to generate prompts!
   - [make outputs more reliable](https://learnprompting.org/docs/category/%EF%B8%8F-reliability):
@@ -190,10 +192,17 @@ https://github.com/hchiam/learning-gpt4all
 - make LLM apps: https://dust.tt/
 - prompt token count and breakdown: https://platform.openai.com/tokenizer
 - tip: include in the prompt to ask the user for feedback or clarification or details (better performance + user engagement) https://www.youtube.com/watch?v=s4YKMFFiySI
-- **_SG-ICL_** = Self-Generated In-Context Learning = get the LLM to generate the one/few-shot examples for you (if you can't get high-quality examples yourself)
-- **_ThoT_** = Thread-of-Thought = zero-shot-CoT but instead end with "Walk me through this context in manageable parts step by step, summarizing and analyzing as we go." (good for long, complicated context text)
-- **_CCoT_** = Contrastive CoT = few-shot-CoT but with an incorrect example (non-example) also provided ("Correct explanation: ..." + "Incorrect explanation: ..."), which helps give explicit advice on mistakes to avoid
-- **_SA_** = Self-Ask = give an example of "Question: -> Are follow-up questions needed here: Yes. -> Follow-up: -> Intermediate answer: -> ... -> So the final answer is:" then start with the next "Question: ... Are follow-up questions needed here:"
-- **_Tab-CoT_** = Tabular CoT = reason both horizontally and vertically, with column headings relevant to the task at hand
-  - e.g.: end prompt with markdown `|step|question|response|`
-  - e.g.: end prompt with markdown `|step|subquestion|procedure|result|`
+- thought generation:
+  - **_CoT_** = Chain-of-Thought = (see notes above).
+  - **_SG-ICL_** = Self-Generated In-Context Learning = get the LLM to generate the one/few-shot examples for you (if you can't get high-quality examples yourself).
+  - **_ThoT_** = Thread-of-Thought = zero-shot-CoT but instead end with "Walk me through this context in manageable parts step by step, summarizing and analyzing as we go." (good for long, complicated context text). I think I'd want to combine this ThoT with PaS (see below).
+  - **_CCoT_** = Contrastive CoT = few-shot-CoT but with an incorrect example (non-example) also provided ("Correct explanation: ..." + "Incorrect explanation: ..."), which helps give explicit advice on mistakes to avoid.
+  - **_SA_** = Self-Ask = give an example of "Question: -> Are follow-up questions needed here: Yes. -> Follow-up: -> Intermediate answer: -> ... -> So the final answer is:" then start with the next "Question: ... Are follow-up questions needed here:"
+  - **_Tab-CoT_** = Tabular CoT = reason both horizontally and vertically, with column headings relevant to the task at hand:
+    - e.g.: end prompt with markdown `|step|question|response|`
+    - e.g.: end prompt with markdown `|step|subquestion|procedure|result|`
+- problem decomposition:
+  - **_LtM_** = Least-to-Most = (see notes above).
+  - **_PaS_** = Plan-and-Solve = structured zero-shot-CoT like ThoT but instead end with "Let's first understand the problem and devise a plan to solve it. Then, let's carry out the plan and solve the problem step by step." I think I'd want to combine this PaS with ThoT (see above).
+  - **_PoTh_** = Program-of-Thoughts = explicitly use code for steps (as opposed to the relatively more general "steps" approach of CoT/ThoT/Tab-CoT/PaS which may be better than PoTh for more semantic reasoning tasks).
+    - e.g. "Please write easily understandable code that could be used to answer this question." (might want to provide examples too).
