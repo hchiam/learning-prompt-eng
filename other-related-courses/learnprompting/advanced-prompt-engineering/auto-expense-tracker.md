@@ -1,6 +1,6 @@
 # Automated Expense Tracker
 
-(Note: this may not be a pure example of PoTh, since I'm explicitly suggesting some of the steps, but I do guide the model to insert what else it thinks are necessary that I may not have thought of.)
+This may not be a pure example of PoTh, since I'm explicitly suggesting some of the steps, but I do guide the model to insert what else it thinks are necessary that I may not have thought of. Also, I personally would include `/** @OnlyCurrentDoc */` at the top of the Google Apps Script code.
 
 ## Prompt
 
