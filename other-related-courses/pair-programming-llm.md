@@ -229,7 +229,7 @@ print(completion.result)
 # _**REMINDER:**_ output -> read, understand, try, test cases BEFORE using in production. 
 ```
 
-## help with techcical debt
+## help with technical debt
 
 - to understand a large block of unfamiliar old code
 - to document a large block of unfamiliar old code, in markdown output format
