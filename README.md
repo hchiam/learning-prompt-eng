@@ -238,3 +238,9 @@ https://github.com/hchiam/learning-gpt4all
 - post-prompting ("instructing after user input") > instructing before: makes the model harder to trick
 - sandwich defense > simply instructing before or after the user input
 - "Feel free to ask me any clarifying questions first." https://youtu.be/2IK3DFHRFfw
+- MRKL = "Modular Reasoning, Knowledge and Language", pronounced "miracle" = LLM + APIs/modules
+  - the APIs or modules can be triggered by keywords in the LLM's output
+  - MRKL augments/complements good prompt engineering (doesn't replace it):
+    - search-and-cite capability is a good complement to CoVe for reducing hallucinations
+    - calculator capability is a good complement to CoT for accurate compound math operations
+    - code interpreter capability is a good complement to PoTh (it can calculate/execute its own code thinking steps)
