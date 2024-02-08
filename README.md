@@ -218,3 +218,4 @@ https://github.com/hchiam/learning-gpt4all
   - <img alt="special case prompt attack" src="https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/6_special_case_prompt_attack.png" width="500">
 - post-prompting ("instructing after user input") > instructing before: makes the model harder to trick
 - sandwich defense > simply instructing before or after the user input
+- "Feel free to ask me any clarifying questions first." https://youtu.be/2IK3DFHRFfw
