@@ -145,6 +145,8 @@ Remember to enable the necessary Google Apps Script APIs and set up triggers as 
 
 ## Working demo
 
+https://github.com/hchiam/learning-prompt-eng/tree/main/other-related-courses/learnprompting/advanced-prompt-engineering/auto-expense-tracker
+
 ### Slightly-edited code
 
 [Code.gs](https://github.com/hchiam/learning-prompt-eng/blob/main/other-related-courses/learnprompting/advanced-prompt-engineering/auto-expense-tracker/Code.gs)
