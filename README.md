@@ -215,7 +215,7 @@ https://github.com/hchiam/learning-gpt4all
     - consider giving it hints or reading material too.
   - **_SR_** = Self-Refine = critique and refine (until hit stopping condition?)
     - e.g.: "Brainstorm an idea for (...). After you've created the idea, critique it. Finally, use the critiques to refine the initial idea."
-  - **_COVE_** = Chain-of-Verification = to evaluate the original response, independent instances generate fact-check questions -> independent instances answer each question to generate knowledge -> re-ask the initial question with that generated knowledge -> (you might need to fact-check further).
+  - **_CoVe_** = Chain-of-Verification = to evaluate the original response, independent instances generate fact-check questions -> independent instances answer each question to generate knowledge -> re-ask the initial question with that generated knowledge -> (you might need to fact-check further).
     - e.g.: "Please create a list of verification questions that could be used to guide a fact-checker on the previous response."
     - designed to reduce AI hallucinations in LLM responses
   - **_S2A_** = System 2 Attention = regenerate question to try to get rid of irrelevant/distracting information -> independent instance responds to the simplified text.
