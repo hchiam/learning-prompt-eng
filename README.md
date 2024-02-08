@@ -206,13 +206,24 @@ https://github.com/hchiam/learning-gpt4all
   - **_PaS_** = Plan-and-Solve = structured zero-shot-CoT like ThoT but instead end with "Let's first understand the problem and devise a plan to solve it. Then, let's carry out the plan and solve the problem step by step." I think I'd want to combine this PaS with ThoT (see above).
   - **_PoTh_** = Program-of-Thoughts = explicitly use code for steps (as opposed to the relatively more general "steps" approach of CoT/ThoT/Tab-CoT/PaS which may be better than PoTh for more semantic reasoning tasks).
     - e.g. "Please write easily understandable code that could be used to answer this question." (might want to provide examples too).
-- self-criticism: critique and revise its own response
-  - **_SE_** = Self-Evaluation
-  - **_SR_** = Self-Refine
-  - **_COVE_** = Chain-of-Verification
-  - **_S2A_** = System 2 Attention
-  - **_RaR_** = Rephrase and Respond
-  - **_RE2_** = Re-reading
+- self-criticism:
+  - = good for accuracy. critique and revise its own response, like higher-order critical thinking.
+  - **_SE_** = Self-Evaluation = ask for confidence level.
+    - e.g.: "How confident are you in that answer? What probability would you give it?"
+    - consider giving it multiple answers to consider (brainstorm) before evaluating validity.
+    - consider giving it hints or reading material too.
+  - **_SR_** = Self-Refine = critique and refine (until hit stopping condition?)
+    - e.g.: "Brainstorm an idea for (...). After you've created the idea, critique it. Finally, use the critiques to refine the initial idea."
+  - **_COVE_** = Chain-of-Verification = to evaluate the original response, independent instances generate fact-check questions -> independent instances answer each question to generate knowledge -> re-ask the initial question with that generated knowledge -> (you might need to fact-check further).
+    - e.g.: "Please create a list of verification questions that could be used to guide a fact-checker on the previous response."
+    - designed to reduce AI hallucinations in LLM responses
+  - **_S2A_** = System 2 Attention = regenerate question to try to get rid of irrelevant/distracting information -> independent instance responds to the simplified text.
+    - e.g.: "Please restate this text, but only include information that is relevant to the question at hand."
+    - e.g.: "Extract the parts of the text that are unbiased and not opinion, so that using the text alone would be good context for providing an unbiased answer to the question portion of the text. Please include the actual question or query that the user is asking." + some formatting request for unbiased context and unbiased question.
+  - **_RaR_** = Rephrase and Respond = rephrase question, then respond to that with a separate instance (one-step RaR) or just have it respond with both questions in the same conversation instance as context to understand intent (two-step RaR):
+    - e.g.: "Given the question above, rephrase and expand it to better facilitate answering, ensuring all information from the original question is retained."
+    - e.g.: "Given the question above, rephrase and expand it to better facilitate answering, ensuring all information from the original question is retained. **_After you've done so, go ahead and answer the question._**"
+  - **_RE2_** = Re-reading = prompt + "Read the question again" + prompt
 - debiasing:
   - training data bias (e.g. underrepresented groups of data), algorithmmic bias (e.g. incorrect proxies), human cognitive bias (e.g. misplaced over-confidence in AI)
   - lots of data, diverse data to cover cases; adversarial de-biasing, oversampling; evaluate predictions for different groups
