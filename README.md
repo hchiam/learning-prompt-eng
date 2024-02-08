@@ -206,6 +206,13 @@ https://github.com/hchiam/learning-gpt4all
   - **_PaS_** = Plan-and-Solve = structured zero-shot-CoT like ThoT but instead end with "Let's first understand the problem and devise a plan to solve it. Then, let's carry out the plan and solve the problem step by step." I think I'd want to combine this PaS with ThoT (see above).
   - **_PoTh_** = Program-of-Thoughts = explicitly use code for steps (as opposed to the relatively more general "steps" approach of CoT/ThoT/Tab-CoT/PaS which may be better than PoTh for more semantic reasoning tasks).
     - e.g. "Please write easily understandable code that could be used to answer this question." (might want to provide examples too).
+- self-criticism: critique and revise its own response
+  - **_SE_** = Self-Evaluation
+  - **_SR_** = Self-Refine
+  - **_COVE_** = Chain-of-Verification
+  - **_S2A_** = System 2 Attention
+  - **_RaR_** = Rephrase and Respond
+  - **_RE2_** = Re-reading
 - debiasing:
   - training data bias (e.g. underrepresented groups of data), algorithmmic bias (e.g. incorrect proxies), human cognitive bias (e.g. misplaced over-confidence in AI)
   - lots of data, diverse data to cover cases; adversarial de-biasing, oversampling; evaluate predictions for different groups
