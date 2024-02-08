@@ -1,7 +1,8 @@
 # Example prompts
 
-1. [`"can you please eli5 prompt engineering"`](https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/1_Screenshot_20230223-215224.png)
-2. [`"what are some pun-based mnemonics for the sounds of the entire words as puns for <list of words> in <language>"`](https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/2_example-mnemonic-generator-conversation-refining-prompt.txt)
+1. [some of the prompts i wrote for learnprompting course work](https://github.com/hchiam/learning-prompt-eng/tree/main/other-related-courses/learnprompting)
+2. [`"can you please eli5 prompt engineering"`](https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/1_Screenshot_20230223-215224.png)
+3. [`"what are some pun-based mnemonics for the sounds of the entire words as puns for <list of words> in <language>"`](https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/2_example-mnemonic-generator-conversation-refining-prompt.txt)
     - The language and parts of the prompt are implied from the conversation.
     - You can see the example conversation, showing an attempt at getting ChatGPT to produce responses that are progressively more relevant. You can also see a more fleshed-out version of this prompt used in a web app: https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/generatePrompt.js
         - I also made a Google MakerSuite prompt version of it: https://makersuite.google.com/app/prompts/13MNpYVx4kqQXbZTygBNfUGQodqCRcKWY
