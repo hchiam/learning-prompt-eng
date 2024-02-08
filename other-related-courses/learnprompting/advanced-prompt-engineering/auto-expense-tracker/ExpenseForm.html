@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <form>
+      <label for="category">Category:</label>
+      <input type="text" id="category" name="category"><br><br>
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" name="amount"><br><br>
+      <input type="button" value="Submit" onclick="submitForm()">
+    </form>
+    <script>
+      function submitForm() {
+        var category = document.getElementById("category").value;
+        var amount = document.getElementById("amount").value;
+        // google.script.run.addExpense(category, amount);
+        google.script.run.onFormSubmit(category, amount); // I had to manually change it to this, since the "On Form Submit" trigger only works when a google form submits a response to a google sheet, not for a popup submit in the sheet
+        google.script.host.close();
+      }
+    </script>
+  </body>
+</html>
