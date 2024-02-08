@@ -142,3 +142,19 @@ function onFormSubmit(e) {
 ```
 
 Remember to enable the necessary Google Apps Script APIs and set up triggers as needed for the functions to execute properly. Also, customize the code according to your specific requirements and preferences.
+
+## Working demo
+
+### Slightly-edited code
+
+[Code.gs](https://github.com/hchiam/learning-prompt-eng/blob/main/other-related-courses/learnprompting/advanced-prompt-engineering/auto-expense-tracker/Code.gs)
+
+[ExpenseForm.html](https://github.com/hchiam/learning-prompt-eng/blob/main/other-related-courses/learnprompting/advanced-prompt-engineering/auto-expense-tracker/ExpenseForm.html)
+
+### Code-generated menu item
+
+![generated menu item](https://github.com/hchiam/learning-prompt-eng/blob/main/other-related-courses/learnprompting/advanced-prompt-engineering/auto-expense-tracker/GeneratedMenuItem.png)
+
+### Code-generated popup and data and graph
+
+![working demo popup and data and graph](https://github.com/hchiam/learning-prompt-eng/blob/main/other-related-courses/learnprompting/advanced-prompt-engineering/auto-expense-tracker/WorkingDemoPopup_Data_and_Graph.png)
