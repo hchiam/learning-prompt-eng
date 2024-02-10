@@ -140,6 +140,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <h1>Pun-based Mnemonic Generator</h1>
+        <p>Generates mnemonics to help you remember the pronunciation and meaning of a word in another language by using English "puns".</p>
         <p className={declutter ? styles.declutter : styles.center}>
           To find or create your OpenAI API key, go to{" "}
           <a
