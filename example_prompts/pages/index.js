@@ -137,6 +137,7 @@ export default function Home() {
       <Head>
         <title>Example prompts</title>
         <link rel="icon" href="/logo.png" />
+        <link rel="stylesheet" href="/base.css" />
       </Head>
 
       <main className={styles.main}>
@@ -166,9 +167,9 @@ export default function Home() {
           src="/logo.png"
           className={styles.icon + " " + (declutter ? styles.declutter : "")}
         />
-        <h3 className={declutter ? styles.declutter : ""}>
+        <h2 className={declutter ? styles.declutter : ""}>
           Enter a word in any language:
-        </h3>
+        </h2>
         <form onSubmit={onSubmit}>
           <select
             name="language"

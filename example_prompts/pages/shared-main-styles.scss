@@ -31,13 +31,23 @@
 .main .icon {
   width: 34px;
 }
-.main h3 {
-  font-size: 32px;
-  line-height: 40px;
-  font-weight: bold;
-  color: #202123;
-  margin: 16px 0 40px;
-  text-align: center;
+.main {
+  h1, h2, h3, h4, h5 {
+    line-height: 40px;
+    font-weight: bold;
+    color: #202123;
+    margin: 16px 0 40px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 16px;
+  }
 }
 .main form {
   display: flex;

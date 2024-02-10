@@ -148,6 +148,7 @@ export default function CustomerSupportDemo() {
       <Head>
         <title>Customer Support Demo</title>
         <link rel="icon" href="/customer-support-demo.png" />
+        <link rel="stylesheet" href="/base.css" />
       </Head>
 
       <main className={styles.main}>
@@ -171,7 +172,7 @@ export default function CustomerSupportDemo() {
             styles["api-key"] + " " + (declutter ? styles.declutter : "")
           }
         />
-        <h3>Customer Support Demo:</h3>
+        <h1>Minimal Customer Support Test:</h1>
         <p>
           Things to try:
           <ul>
