@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
 import { Configuration, OpenAIApi } from "openai";
-import styles from "./index.module.css";
+import styles from "./index.module.scss";
 import generatePrompt from "../helpers/generatePrompt";
 import languageList from "../helpers/languageList";
 
@@ -141,9 +141,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1>Pun-based Mnemonic Generator</h1>
-        <p>This minimal demo generates mnemonics to help you remember the pronunciation and meaning of a word in another language by using English "puns".</p>
+        <p className={styles.justify}>This basic demo generates mnemonics to help you remember the pronunciation and meaning of a word in another language by using English "puns". For more free-form interaction like generating images or generating mnemonics for a list of vocab, consider trying <a href="https://chat.openai.com/g/g-RsoXtrv5O-pun-linguist" target="_blank">Pun Linguist</a>, a custom GPT version of this I made.</p>
         <p className={declutter ? styles.declutter : styles.center}>
-          To find or create your OpenAI API key, go to{" "}
+          To find or create your OpenAI API key, go to: <br/>
           <a
             href="https://platform.openai.com/account/api-keys"
             target="_blank"

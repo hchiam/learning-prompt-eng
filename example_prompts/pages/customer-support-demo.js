@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
 import { Configuration, OpenAIApi } from "openai";
-import styles from "./customer-support-demo.module.css";
+import styles from "./customer-support-demo.module.scss";
 import checkTableOfContents from "../helpers/customer-support-demo/checkTableOfContents";
 import {
   contactUrl,

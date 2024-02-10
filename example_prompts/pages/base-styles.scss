@@ -24,7 +24,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 60px;
+  margin: auto;
+  max-width: 50ch;
+  padding-block: 60px;
 }
 .main .icon {
   width: 34px;
@@ -92,4 +94,7 @@
 .center,
 .centre {
   text-align: center;
+}
+.justify {
+  text-align: justify;
 }
