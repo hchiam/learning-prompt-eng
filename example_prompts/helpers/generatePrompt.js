@@ -1,6 +1,8 @@
+import formattedLog from "./formattedLog";
+
 export default function generatePrompt(language, word) {
-  console.log("language:\n\n", language);
-  console.log("word:\n\n", word);
+  formattedLog(`%clanguage:%c\n\n${language}`);
+  formattedLog(`%cword:%c\n\n${word}`);
 
   // const prompt = `What is the ${language} word "${word}" in English? And then provide possible mnemonics that match the phonetic sounds of the entire ${language} word "${word}" as puns. Explain how the mnemonics help you remember the word by linking the pun to the English meaning.`;
 
@@ -15,6 +17,6 @@ Mnemonics:
 
 Now for the ${language} word "${word}": `;
 
-  console.log("prompt:\n\n", prompt);
+  formattedLog(`%cprompt:%c\n\n${prompt}`);
   return prompt;
 }

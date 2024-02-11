@@ -10,6 +10,7 @@ import {
 import referToDoc from "../helpers/customer-support-demo/referToDoc";
 import getDocTextToReferTo from "../helpers/customer-support-demo/knowledgeBase/getDocTextToReferTo";
 import { tableOfContents } from "../helpers/customer-support-demo/tableOfContents";
+import getCompletion from "../helpers/getCompletion";
 
 const maxUserPromptLength = 50;
 
@@ -71,12 +72,7 @@ export default function CustomerSupportDemo() {
       setDeclutter(true);
       const prompt = apiHelperFunction(userPrompt);
       console.log(prompt);
-      const completion = await openai.createCompletion({
-        model: "gpt-3.5-turbo-instruct", // to follow instructions, instead of pattern matching davinci
-        prompt: prompt,
-        temperature: 0.6,
-        max_tokens: 500,
-      });
+      const completion = await getCompletion(openai, prompt);
       if (onSuccess) onSuccess(completion.data.choices[0].text);
     } catch (error) {
       setDeclutter(false);

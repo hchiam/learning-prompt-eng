@@ -1,5 +1,6 @@
 import { Configuration, OpenAIApi } from "openai";
 import generatePrompt from "../../helpers/generatePrompt";
+import getCompletion from "../../helpers/getCompletion";
 
 let configuration;
 let openai;
@@ -59,12 +60,7 @@ export default async function (req, res) {
     }
 
     const prompt = generatePrompt(language, word);
-    const completion = await openai.createCompletion({
-      model: "gpt-3.5-turbo-instruct", // to follow instructions, instead of pattern matching davinci
-      prompt: prompt,
-      temperature: 0.6,
-      max_tokens: 500,
-    });
+    const completion = await getCompletion(openai, prompt);
     res.status(200).json({
       prompt: prompt,
       result: completion.data.choices[0].text,

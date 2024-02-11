@@ -4,6 +4,10 @@ import { Configuration, OpenAIApi } from "openai";
 import styles from "./index.module.scss";
 import generatePrompt from "../helpers/generatePrompt";
 import languageList from "../helpers/languageList";
+import {critiqueMnemonics, getRefinedMnemonics} from "../helpers/evaluateMnemonics";
+import removeNonWiktionaryLinks from "../helpers/removeNonWiktionaryLinks";
+import getCompletion from "../helpers/getCompletion";
+import formattedLog from "../helpers/formattedLog";
 
 export default function Home() {
   const [keyInput, setKeyInput] = useState("");
@@ -13,6 +17,8 @@ export default function Home() {
   const [result, setResult] = useState("");
   const [enableSubmit, setEnableSubmit] = useState(true);
   const [declutter, setDeclutter] = useState(false);
+
+  const [refinedOutput, setRefinedOutput] = useState("");
 
   function handleLanguageSelect(target) {
     setLang(target.querySelectorAll('option')[target.selectedIndex]?.getAttribute('data-language-code') ?? '');
@@ -69,14 +75,23 @@ export default function Home() {
     try {
       setDeclutter(true);
       const prompt = generatePrompt(languageInput, wordInput);
-      console.log(prompt);
-      const completion = await openai.createCompletion({
-        model: "gpt-3.5-turbo-instruct", // to follow instructions, instead of pattern matching davinci
-        prompt: prompt,
-        temperature: 0.6,
-        max_tokens: 500,
-      });
-      if (onSuccess) onSuccess(completion.data.choices[0].text);
+      const completion = await getCompletion(openai, prompt);
+      const mnemonicsOutput = completion.data.choices[0].text;
+      if (onSuccess) onSuccess(mnemonicsOutput);
+
+      const critiquedOutputPrompt = critiqueMnemonics(mnemonicsOutput);
+      const completion2 = await getCompletion(openai, critiquedOutputPrompt);
+      const critiquedOutput = completion2.data.choices[0].text;
+      formattedLog(`%ccritiquedOutput:%c\n\n${critiquedOutput}`);
+
+      const refinedOutputPrompt = getRefinedMnemonics(mnemonicsOutput + '\n\n' + critiquedOutput);
+      const completion3 = await getCompletion(openai, refinedOutputPrompt);
+      let finalOutput = completion3.data.choices[0].text;
+      finalOutput = removeNonWiktionaryLinks(finalOutput);
+      finalOutput = finalOutput.replace(/https?:\/\//g, '');
+      setRefinedOutput(finalOutput);
+      formattedLog(`%cfinalOutput:%c\n\n${ finalOutput}`);
+
     } catch (error) {
       setDeclutter(false);
       // Consider adjusting the error handling logic for your use case
@@ -118,7 +133,7 @@ export default function Home() {
     // for prod deploy with API key always required:
     await callApi(
       (result) => {
-        console.log(result);
+        formattedLog(`%cfirst draft:%c\n\n${result}`);
         setResult(result);
         setEnableSubmit(true);
       },
