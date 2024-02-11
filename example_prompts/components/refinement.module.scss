@@ -1,0 +1,27 @@
+.container {
+  backdrop-filter: saturate(2);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px gray inset;
+  animation: reveal 1s forwards;
+  clip-path: inset(0 0 100% 0); // clip-path inset() 100% in from bottom = top
+  margin-bottom: 40px;
+  opacity: 0;
+}
+
+@keyframes reveal {
+  0% {
+    clip-path: inset(0 0 100% 0); // clip-path inset() 100% in from bottom = top
+    opacity: 0;
+  }
+  100% {
+    clip-path: inset(0 0 0 0); // clip-path inset() 0 in from bottom = bottom
+    opacity: 1;
+  }
+}
+
+h2.waiting {
+  background: maroon;
+  border-radius: 1rem;
+  color: white;
+  padding: 1rem;
+}

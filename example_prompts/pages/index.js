@@ -8,6 +8,8 @@ import {critiqueMnemonics, getRefinedMnemonics} from "../helpers/evaluateMnemoni
 import removeNonWiktionaryLinks from "../helpers/removeNonWiktionaryLinks";
 import getCompletion from "../helpers/getCompletion";
 import formattedLog from "../helpers/formattedLog";
+import Refinement from "../components/refinement";
+import React from "react";
 
 export default function Home() {
   const [keyInput, setKeyInput] = useState("");
@@ -18,6 +20,7 @@ export default function Home() {
   const [enableSubmit, setEnableSubmit] = useState(true);
   const [declutter, setDeclutter] = useState(false);
 
+  const [firstDraft, setFirstDraft] = useState("");
   const [refinedOutput, setRefinedOutput] = useState("");
 
   function handleLanguageSelect(target) {
@@ -78,19 +81,20 @@ export default function Home() {
       const completion = await getCompletion(openai, prompt);
       const mnemonicsOutput = completion.data.choices[0].text;
       if (onSuccess) onSuccess(mnemonicsOutput);
+      setFirstDraft(mnemonicsOutput);
 
-      const critiquedOutputPrompt = critiqueMnemonics(mnemonicsOutput);
-      const completion2 = await getCompletion(openai, critiquedOutputPrompt);
-      const critiquedOutput = completion2.data.choices[0].text;
-      formattedLog(`%ccritiquedOutput:%c\n\n${critiquedOutput}`);
+      // const critiquedOutputPrompt = critiqueMnemonics(mnemonicsOutput);
+      // const completion2 = await getCompletion(openai, critiquedOutputPrompt);
+      // const critiquedOutput = completion2.data.choices[0].text;
+      // formattedLog(`%ccritiquedOutput:%c\n\n${critiquedOutput}`);
 
-      const refinedOutputPrompt = getRefinedMnemonics(mnemonicsOutput + '\n\n' + critiquedOutput);
-      const completion3 = await getCompletion(openai, refinedOutputPrompt);
-      let finalOutput = completion3.data.choices[0].text;
-      finalOutput = removeNonWiktionaryLinks(finalOutput);
-      finalOutput = finalOutput.replace(/https?:\/\//g, '');
-      setRefinedOutput(finalOutput);
-      formattedLog(`%cfinalOutput:%c\n\n${ finalOutput}`);
+      // const refinedOutputPrompt = getRefinedMnemonics(mnemonicsOutput + '\n\n' + critiquedOutput);
+      // const completion3 = await getCompletion(openai, refinedOutputPrompt);
+      // let finalOutput = completion3.data.choices[0].text;
+      // finalOutput = removeNonWiktionaryLinks(finalOutput);
+      // finalOutput = finalOutput.replace(/https?:\/\//g, '');
+      // setRefinedOutput(finalOutput);
+      // formattedLog(`%cfinalOutput:%c\n\n${ finalOutput}`);
 
     } catch (error) {
       setDeclutter(false);
@@ -126,6 +130,7 @@ export default function Home() {
 
     setEnableSubmit(false);
     setResult("");
+    setFirstDraft('');
 
     // for local testing with API key set in .env file:
     // callApiLocally();
@@ -215,12 +220,13 @@ export default function Home() {
           />
         </form>
         <div className={styles.result}>
-          {String(result || "")
+          {String(result || "").trim()
             .split("\n")
             .map((x, i) => (
               <p key={i}>{x}</p>
             ))}
         </div>
+        {keyInput && firstDraft && result ? <Refinement apiKey={keyInput} mnemonicsOutput={firstDraft}/> : ''}
         <a href="/customer-support-demo">Customer Support Demo</a>
       </main>
     </div>
