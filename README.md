@@ -189,6 +189,7 @@ https://github.com/hchiam/learning-gpt4all
 
 - **my example prompt template** (WIP) and OpenAI/DeepLearning.AI course notes:
   - https://github.com/hchiam/learning-prompt-eng/blob/main/open_ai_course_notes.md#example-prompt-template-wip
+  - syllabic abbreviation **mnemonic**: _"Per**ConTa**, **ExFor**To"_ ([based on a Jeff Su video](https://www.youtube.com/watch?v=jC4v5AS4RIM))
 - playground: https://trydyno.com
 - make LLM apps: https://dust.tt/
 - prompt token count and breakdown: https://platform.openai.com/tokenizer
