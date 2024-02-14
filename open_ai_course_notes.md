@@ -27,16 +27,18 @@ https://learn.deeplearning.ai/chatgpt-prompt-eng/
 My summary of what I've learned: (consider checking the notes above and also the notes at https://github.com/hchiam/learning-prompt-eng/blob/main/README.md)
 
 ```text
-As a (role), your goal/task is to
+As a (persona/role), your goal/task is to
 
-Write a (in what way) / tone
+Write(/task) a (in what way / tone)
 
 It is for (target audience) (and/or some context or information to analyze)
 
 Include at the end
 
-Format it as (HTML, or JSON with keys named, or delimited by triple backticks,
+Format it as (format like HTML, or JSON with keys named, or delimited by triple backticks,
 and give examples if needed for your app)
+
+(example)
 
 Check the input (and fallback if needed for your app)
 
@@ -49,6 +51,8 @@ INPUT:
 
 (start the expected output to autocomplete)
 ```
+
+Which overlaps with `[persona] + [context] + [task] + [example] + [format] + [tone]` (https://www.youtube.com/watch?v=jC4v5AS4RIM), which might be easier to remember more compactly as "PerConTas, ExForTo", then [add more advanced techniques like user engagement/feedback/clarification, thought generation, problem decomposition, self-criticism, debiasing, post-prompting, MRKL, etc](https://github.com/hchiam/learning-prompt-eng/blob/main/README.md#miscellaneous-resources-and-notes).
 
 ## Notebook/Colab Python code
 
