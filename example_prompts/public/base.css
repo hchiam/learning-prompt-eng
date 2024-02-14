@@ -1,3 +1,11 @@
 body {
   background: linear-gradient(to bottom left, #00ff0080, #00ffff80);
 }
+
+a:focus,
+a:hover {
+  background: black;
+  color: lime;
+  border-radius: 0.5rem;
+  outline: 3px solid black;
+}

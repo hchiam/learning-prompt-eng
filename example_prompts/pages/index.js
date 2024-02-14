@@ -246,7 +246,7 @@ export default function Home() {
             />
           </div>
         </form>
-        <div className={styles.result}>
+        <div className={result ? styles.result : ""}>
           {String(result || "")
             .trim()
             .split("\n")
@@ -261,7 +261,9 @@ export default function Home() {
         ) : (
           ""
         )}
-        <a href="/customer-support-demo">Customer Support Demo</a>
+        <div style={{ marginTop: "100px" }}>
+          <a href="/customer-support-demo">Customer Support Demo</a>
+        </div>
       </main>
     </div>
   );
