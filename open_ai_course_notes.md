@@ -52,7 +52,7 @@ INPUT:
 (start the expected output to autocomplete)
 ```
 
-Which overlaps with `[persona] + [context] + [task] + [example] + [format] + [tone]` (https://www.youtube.com/watch?v=jC4v5AS4RIM), which might be easier to remember more compactly as _"Per**ConTas**, **ExFor**To"_, then [add more advanced techniques like user engagement/feedback/clarification, thought generation, problem decomposition, self-criticism, debiasing, post-prompting, MRKL, etc](https://github.com/hchiam/learning-prompt-eng/blob/main/README.md#miscellaneous-resources-and-notes).
+Which overlaps with `[persona] + [context] + [task] + [example] + [format] + [tone]` (https://www.youtube.com/watch?v=jC4v5AS4RIM), which might be easier to remember more compactly as _"Per**ConTa**, **ExFor**To"_ (context can also include criteria of success + constraints), then [add more advanced techniques like user engagement/feedback/clarification, thought generation, problem decomposition, self-criticism, debiasing, post-prompting, MRKL, etc](https://github.com/hchiam/learning-prompt-eng/blob/main/README.md#miscellaneous-resources-and-notes).
 
 ## Notebook/Colab Python code
 
