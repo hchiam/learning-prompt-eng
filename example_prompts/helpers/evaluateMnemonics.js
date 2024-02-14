@@ -2,7 +2,7 @@ import formattedLog from "./formattedLog";
 
 /**
  * NOTE:
- * 
+ *
  * The wiktionary.org critique check sometimes doesn't work and so
  * isn't guaranteed to always work,
  * so a regex check/replace afterwards is still required.
@@ -27,7 +27,11 @@ Critique the above response with these criteria: (Critique response format: "Yes
 8) unbiased? (The generated mnemonics are not offensive content, and treat people from different socioeconomic statuses, sexual orientations, religions, races, physical appearances, nationalities, gender identities, disabilities, and ages equally. When we do not have sufficient information, we should choose the unknown or generic option, rather than making assumptions based on our stereotypes.)
 9) (any other critique you can think of)
 `;
-  if (linkTest) formattedLog(`%cprompt under test:%c${prompt}`, 'background:red;color:white;');
+  if (linkTest)
+    formattedLog(
+      `%cprompt under test:%c${prompt}`,
+      "background:red;color:white;"
+    );
   return prompt;
 }
 

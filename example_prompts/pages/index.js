@@ -4,7 +4,10 @@ import { Configuration, OpenAIApi } from "openai";
 import styles from "./index.module.scss";
 import generatePrompt from "../helpers/generatePrompt";
 import languageList from "../helpers/languageList";
-import {critiqueMnemonics, getRefinedMnemonics} from "../helpers/evaluateMnemonics";
+import {
+  critiqueMnemonics,
+  getRefinedMnemonics,
+} from "../helpers/evaluateMnemonics";
 import removeNonWiktionaryLinks from "../helpers/removeNonWiktionaryLinks";
 import getCompletion from "../helpers/getCompletion";
 import formattedLog from "../helpers/formattedLog";
@@ -24,7 +27,11 @@ export default function Home() {
   const [refinedOutput, setRefinedOutput] = useState("");
 
   function handleLanguageSelect(target) {
-    setLang(target.querySelectorAll('option')[target.selectedIndex]?.getAttribute('data-language-code') ?? '');
+    setLang(
+      target
+        .querySelectorAll("option")
+        [target.selectedIndex]?.getAttribute("data-language-code") ?? ""
+    );
     setLanguageInput(target.value);
   }
 
@@ -95,7 +102,6 @@ export default function Home() {
       // finalOutput = finalOutput.replace(/https?:\/\//g, '');
       // setRefinedOutput(finalOutput);
       // formattedLog(`%cfinalOutput:%c\n\n${ finalOutput}`);
-
     } catch (error) {
       setDeclutter(false);
       // Consider adjusting the error handling logic for your use case
@@ -130,7 +136,7 @@ export default function Home() {
 
     setEnableSubmit(false);
     setResult("");
-    setFirstDraft('');
+    setFirstDraft("");
 
     // for local testing with API key set in .env file:
     // callApiLocally();
@@ -163,9 +169,22 @@ export default function Home() {
       <main className={styles.main}>
         <img id={styles.logo} alt="" src="/Pun_Linguist_logo_full_size.png" />
         <h1>Pun-based Mnemonic Generator</h1>
-        <p className={styles.justify}>This basic demo generates mnemonics to help you remember the pronunciation and meaning of a word in another language by using English "puns". For more free-form interaction with the ability to search and generates images, or to generate mnemonics for a list of vocab, consider trying <a href="https://chat.openai.com/g/g-RsoXtrv5O-pun-linguist" target="_blank">Pun Linguist</a>, a custom GPT version of this demo that you're looking at.</p>
+        <p className={styles.justify}>
+          This basic demo generates mnemonics to help you remember the
+          pronunciation and meaning of a word in another language by using
+          English "puns". For more free-form interaction with the ability to
+          search and generates images, or to generate mnemonics for a list of
+          vocab, consider trying{" "}
+          <a
+            href="https://chat.openai.com/g/g-RsoXtrv5O-pun-linguist"
+            target="_blank"
+          >
+            Pun Linguist
+          </a>
+          , a custom GPT version of this demo that you're looking at.
+        </p>
         <p className={declutter ? styles.declutter : styles.center}>
-          To find or create your OpenAI API key, go to: <br/>
+          To find or create your OpenAI API key, go to: <br />
           <a
             href="https://platform.openai.com/account/api-keys"
             target="_blank"
@@ -194,19 +213,20 @@ export default function Home() {
         </h2>
         <form onSubmit={onSubmit}>
           <div className={styles.language}>
-          <select
-            name="language"
-            value={languageInput}
-            onChange={(e) => handleLanguageSelect(e.target)}
-            disabled={!enableSubmit}
-          >
-            <option value="">Select a language</option>
-            {languageList().map((x, i) => (
-              <option key={i} value={x[0]} data-language-code={x[1]}>
-                {x[0]}
-              </option>
-            ))}
-          </select></div>
+            <select
+              name="language"
+              value={languageInput}
+              onChange={(e) => handleLanguageSelect(e.target)}
+              disabled={!enableSubmit}
+            >
+              <option value="">Select a language</option>
+              {languageList().map((x, i) => (
+                <option key={i} value={x[0]} data-language-code={x[1]}>
+                  {x[0]}
+                </option>
+              ))}
+            </select>
+          </div>
           <div className={styles.word}>
             <input
               type="text"
@@ -219,24 +239,28 @@ export default function Home() {
             />
           </div>
           <div className={styles.submit}>
-          <input
-            type="submit"
-            value="Generate mnemonics"
-            disabled={!enableSubmit}
-          />
+            <input
+              type="submit"
+              value="Generate mnemonics"
+              disabled={!enableSubmit}
+            />
           </div>
         </form>
         <div className={styles.result}>
-          {String(result || "").trim()
+          {String(result || "")
+            .trim()
             .split("\n")
             .map((x, i) => (
               <p key={i}>{x}</p>
             ))}
         </div>
-        {keyInput && firstDraft && result ? 
-        <div className={styles.refine}>
-          <Refinement apiKey={keyInput} mnemonicsOutput={firstDraft}/>
-        </div> : ''}
+        {keyInput && firstDraft && result ? (
+          <div className={styles.refine}>
+            <Refinement apiKey={keyInput} mnemonicsOutput={firstDraft} />
+          </div>
+        ) : (
+          ""
+        )}
         <a href="/customer-support-demo">Customer Support Demo</a>
       </main>
     </div>

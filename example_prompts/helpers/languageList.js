@@ -190,6 +190,6 @@ export default function languageList() {
     ["Yiddish", "yi"],
     ["Yoruba", "yo"],
     ["Zhuang, Chuang", "za"],
-    ["Zulu", "zu"]
+    ["Zulu", "zu"],
   ];
 }

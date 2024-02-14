@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
-import {critiqueMnemonics, getRefinedMnemonics} from "../helpers/evaluateMnemonics";
+import {
+  critiqueMnemonics,
+  getRefinedMnemonics,
+} from "../helpers/evaluateMnemonics";
 import removeNonWiktionaryLinks from "../helpers/removeNonWiktionaryLinks";
 import getCompletion from "../helpers/getCompletion";
 import formattedLog from "../helpers/formattedLog";
@@ -8,9 +11,9 @@ import sharedStyles from "../pages/index.module.scss";
 import styles from "./refinement.module.scss";
 import { scroll } from "../helpers/scroll";
 
-export default function Refinement({apiKey, mnemonicsOutput}) {
+export default function Refinement({ apiKey, mnemonicsOutput }) {
   const [refinedOutput, setRefinedOutput] = useState("");
-  const [refiningText, setRefiningText] = useState('Refining...');
+  const [refiningText, setRefiningText] = useState("Refining...");
 
   let interval;
 
@@ -33,7 +36,7 @@ export default function Refinement({apiKey, mnemonicsOutput}) {
     let x = 0;
     interval = setInterval(() => {
       x = (x + 1) % 4;
-      setRefiningText('Refining' + '.'.repeat(x));
+      setRefiningText("Refining" + ".".repeat(x));
     }, 500);
   }
 
@@ -44,16 +47,19 @@ export default function Refinement({apiKey, mnemonicsOutput}) {
       const critiquedOutput = completion2.data.choices[0].text;
       formattedLog(`%ccritiquedOutput:%c\n\n${critiquedOutput}`);
 
-      const refinedOutputPrompt = getRefinedMnemonics(mnemonicsOutput + '\n\n' + critiquedOutput);
+      const refinedOutputPrompt = getRefinedMnemonics(
+        mnemonicsOutput + "\n\n" + critiquedOutput
+      );
       const completion3 = await getCompletion(openai, refinedOutputPrompt);
       let finalOutput = completion3.data.choices[0].text;
       finalOutput = removeNonWiktionaryLinks(finalOutput);
-      finalOutput = finalOutput.replace(/https?:\/\//g, '');
+      finalOutput = finalOutput.replace(/https?:\/\//g, "");
       setRefinedOutput(finalOutput);
-      formattedLog(`%crefinedOutput/finalOutput:%c\n\n${refinedOutput}\n\n${finalOutput}`);
+      formattedLog(
+        `%crefinedOutput/finalOutput:%c\n\n${refinedOutput}\n\n${finalOutput}`
+      );
 
       clearInterval(interval);
-
     } catch (error) {
       // Consider adjusting the error handling logic for your use case
       if (error.response) {
@@ -66,16 +72,24 @@ export default function Refinement({apiKey, mnemonicsOutput}) {
 
   return (
     <>
-      {refinedOutput ? <div className={styles.container}>
-        <h2 style={{marginBottom:0}}>Refined Version:</h2>
-        <div className={sharedStyles.result} style={{marginTop:0,paddingTop:0}}>
-          {String(refinedOutput || "").trim()
-            .split("\n")
-            .map((x, i) => (
-              <p key={i}>{x}</p>
-            ))}
+      {refinedOutput ? (
+        <div className={styles.container}>
+          <h2 style={{ marginBottom: 0 }}>Refined Version:</h2>
+          <div
+            className={sharedStyles.result}
+            style={{ marginTop: 0, paddingTop: 0 }}
+          >
+            {String(refinedOutput || "")
+              .trim()
+              .split("\n")
+              .map((x, i) => (
+                <p key={i}>{x}</p>
+              ))}
+          </div>
         </div>
-      </div> : <h2 className={styles.waiting}>{refiningText}</h2>}
+      ) : (
+        <h2 className={styles.waiting}>{refiningText}</h2>
+      )}
     </>
   );
 }
