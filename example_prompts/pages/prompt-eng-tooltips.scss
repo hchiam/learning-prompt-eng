@@ -1,0 +1,106 @@
+@mixin tooltip($text, $width: min(20ch, 100%)) {
+  position: relative;
+  &:focus,
+  &:focus-within,
+  &:hover {
+    &:before {
+      opacity: 1;
+      top: 1rem;
+    }
+    &:after {
+      opacity: 1;
+      top: -0.5rem;
+    }
+  }
+  &:before {
+    // triangle
+    opacity: 0;
+    top: 1.75rem;
+    left: 100%;
+    @media (prefers-reduced-motion: no-preference) {
+      transition:
+        opacity 0.2s,
+        top 0.2s;
+    }
+    content: "";
+    position: absolute;
+    background: black;
+    width: 1rem;
+    height: 1rem;
+    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 50%);
+    z-index: 1;
+  }
+  &:after {
+    // main part of speech bubble
+    opacity: 0;
+    top: 0.25rem;
+    left: calc(100% + 1rem);
+    @media (prefers-reduced-motion: no-preference) {
+      transition:
+        opacity 0.2s,
+        top 0.2s;
+    }
+    content: "Prompt engineering note: \A\A" + $text;
+    white-space: pre-wrap;
+    position: absolute;
+    background: black;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: $width;
+    z-index: 1;
+  }
+}
+
+.language {
+  @include tooltip("Constrained input VALUES.");
+  select {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.word {
+  @include tooltip("Constrained input LENGTH (and no spaces allowed).");
+  input {
+    width: 100%;
+    padding-inline: 0 !important;
+    text-align: center;
+  }
+}
+
+.submit {
+  @include tooltip(
+    "1. First draft prompt to generate mnemonics and a link to for reference. \A Then use SR (Self-Refine) technique with two further prompts: \A 2. Critique output mnemonics, link, etc. \A 3. Generate refined output.",
+    min(30vw, 35ch)
+  );
+  input {
+    width: 100%;
+    padding-inline: 0 !important;
+    text-align: center;
+  }
+}
+
+main > .result {
+  @include tooltip(
+    'First draft prompt: \A\AInstructions: translate the ${language} word "${word}" into English, provide a source to check, and then provide 1-3 possible mnemonics that match the phonetic sounds of the entire ${language} word "${word}" as puns. Explain how the mnemonics help you remember the word by linking the pun to the English meaning. Don\'t use offensive words to make the puns. For example:\A\AThe French word "gare" means "railway station" in English. Check with this source: https://en.wiktionary.org/wiki/gare#French\A\AMnemonics:\A 1. "gare" sounds kind of like "Garfield", which you can visualize as Garfield grrring at the train.\A 2. "gare" sounds like "car", which you could remember how odd it\'d be to see someone driving a car on the train tracks.\A\ANow for the ${language} word "${word}": ',
+    min(30vw, 30ch)
+  );
+  border-radius: 1rem;
+  box-shadow: 0 0 10px black;
+  &:after {
+    font-weight: normal;
+  }
+  input {
+    width: 100%;
+    padding-inline: 0 !important;
+    text-align: center;
+  }
+}
+
+.refine {
+  @include tooltip(
+    'Use SR (Self-Refine) technique with two further prompts: \A 2. Critique output mnemonics, link, etc. (critiqueMnemonics) and \A 3. Generate refined output (getRefinedMnemonics)\A\A\A 2. (critiqueMnemonics): \A\A ${mnemonicsOutput}\A---\A Critique the above response with these criteria: (Critique response format: "Yes/No, ...")\A 1) was the link a wiktionary.org link? it\'s absolutely critical that we only provide wiktionary.org links. (Critique response format example: "No, it is not a wiktionary.org link, so it must be removed just in case for user safety, and replaced with a wiktionary.org link".)\A 2) the link is just a link string, not a literal HTML link? Response format: "Yes/No, ..."\A 3) the link is the correct wiktionary.org link to the correct word for the language? (e.g. https://en.wiktionary.org/wiki/kumbuka#Swahili)\A 4) visually memorable? Response format: "Yes/No, ..."\A 5) incorporates correct meaning and pronunciation? Response format: "Yes/No, ..."\A 6) incorporates/leverages etymology and using root words (ignoring easily-ignored things like the infinite marker). Response format: "Yes/No, ..."\A 7) unique? (i.e. won\'t be easily confused with mnemonics for other words.) Response format: "Yes/No, ..."\A 8) unbiased? (The generated mnemonics are not offensive content, and treat people from different socioeconomic statuses, sexual orientations, religions, races, physical appearances, nationalities, gender identities, disabilities, and ages equally. When we do not have sufficient information, we should choose the unknown or generic option, rather than making assumptions based on our stereotypes.)\A 9) (any other critique you can think of) \A\A\A 3. (getRefinedMnemonics): \A\A${mnemonicsAndCritiques}\AUse the critiques to give one improved and streamlined version of the initial mnemonics.\AIf the mnemonic(s) cannot be further improved, then simply copy the mnemonics into the following section of "Improved Pun-Based Mnemonics".\A Do no describe the qualities of the mnemonics, just give the mnemonics themselves (up to 3).\AInclude just the one wiktionary.org link before all the final mnemonics.\A\A# Example format of "Improved Pun-Based Mnemonics":\A\A---\A Check with this source: https://en.wiktionary.org/wiki/<word>#<language>\AMnemonics:\A 1. <mnemonic/>\A 2. <mnemonic/>\A 3. <mnemonic/>\A---\A\A# Improved Pun-Based Mnemonics:\A',
+    min(30vw, 30ch)
+  );
+}
