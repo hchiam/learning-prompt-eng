@@ -56,6 +56,7 @@ export function SubmitTooltipContent() {
   return (
     <>
       <Prefix />
+      <p>Three steps:</p>
       <CustomList>
         <ol>
           <li>
@@ -113,7 +114,10 @@ export function RefineTooltipContentStep2() {
   return (
     <>
       <Prefix />
-      <p>Use SR (Self-Refine) technique with two further prompts:</p>
+      <p>
+        Using SR (Self-Refine) technique with two further prompts (steps 2 and
+        3):
+      </p>
       <CustomH4>
         (2) Critique output mnemonics, link, etc. (
         <code>critiqueMnemonics</code>):
@@ -176,7 +180,10 @@ export function RefineTooltipContentStep3() {
   return (
     <>
       <Prefix />
-      <p>Use SR (Self-Refine) technique with two further prompts:</p>
+      <p>
+        Using SR (Self-Refine) technique with two further prompts (steps 2 and
+        3):
+      </p>
       <CustomH4>
         (3) Generate refined output (<code>getRefinedMnemonics</code>):
       </CustomH4>
