@@ -8,12 +8,15 @@
     "deploy": "next build; next export; surge ./out https://hchiam-example-prompts.surge.sh; open https://hchiam-example-prompts.surge.sh;"
   },
   "dependencies": {
+    "@tippyjs/react": "^4.2.6",
     "next": "^13.1.1",
     "openai": "^3.1.0",
     "prettier": "^3.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.70.0"
+    "sass": "^1.70.0",
+    "styled-components": "^6.1.8",
+    "tippy.js": "^6.3.7"
   },
   "engines": {
     "node": ">=14.6.0"

@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useEffect } from "react";
 import {
   critiqueMnemonics,
@@ -10,6 +11,12 @@ import { Configuration, OpenAIApi } from "openai";
 import sharedStyles from "../pages/index.module.scss";
 import styles from "./refinement.module.scss";
 import { scroll } from "../helpers/scroll";
+import Tooltip from "./tooltip";
+import {
+  RefineTooltipContentStep2,
+  RefineTooltipContentStep3,
+} from "./tooltipTexts";
+import Tippy from "@tippyjs/react";
 
 export default function Refinement({ apiKey, mnemonicsOutput }) {
   const [refinedOutput, setRefinedOutput] = useState("");
@@ -73,20 +80,32 @@ export default function Refinement({ apiKey, mnemonicsOutput }) {
   return (
     <>
       {refinedOutput ? (
-        <div className={styles.container}>
-          <h2 style={{ marginBottom: 0 }}>Refined Version:</h2>
-          <div
-            className={sharedStyles.result}
-            style={{ marginTop: 0, paddingTop: 0 }}
+        <Tippy
+          content={<RefineTooltipContentStep2 />}
+          // useAnimateFill={false}
+          placement="left"
+        >
+          <Tippy
+            content={<RefineTooltipContentStep3 />}
+            // useAnimateFill={false}
+            placement="right"
           >
-            {String(refinedOutput || "")
-              .trim()
-              .split("\n")
-              .map((x, i) => (
-                <p key={i}>{x}</p>
-              ))}
-          </div>
-        </div>
+            <div tabIndex="0" className={styles.container}>
+              <h2 style={{ marginBottom: 0 }}>Refined Version:</h2>
+              <div
+                className={sharedStyles.result}
+                style={{ marginTop: 0, paddingTop: 0 }}
+              >
+                {String(refinedOutput || "")
+                  .trim()
+                  .split("\n")
+                  .map((x, i) => (
+                    <p key={i}>{x}</p>
+                  ))}
+              </div>
+            </div>
+          </Tippy>
+        </Tippy>
       ) : (
         <h2 className={styles.waiting}>{refiningText}</h2>
       )}

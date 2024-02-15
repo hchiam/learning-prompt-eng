@@ -13,6 +13,14 @@ import getCompletion from "../helpers/getCompletion";
 import formattedLog from "../helpers/formattedLog";
 import Refinement from "../components/refinement";
 import React from "react";
+import Tooltip from "../components/tooltip";
+import {
+  LanguageTooltipContent,
+  RefineTooltipContent,
+  ResultTooltipContent,
+  SubmitTooltipContent,
+  WordTooltipContent,
+} from "../components/tooltipTexts";
 
 export default function Home() {
   const [keyInput, setKeyInput] = useState("");
@@ -188,6 +196,7 @@ export default function Home() {
           <a
             href="https://platform.openai.com/account/api-keys"
             target="_blank"
+            tabIndex={enableSubmit ? "-1" : "0"}
           >
             https://platform.openai.com/account/api-keys
           </a>
@@ -199,6 +208,7 @@ export default function Home() {
           value={keyInput}
           onChange={(e) => setKeyInput(e.target.value)}
           disabled={!enableSubmit}
+          tabIndex={enableSubmit ? "-1" : "0"}
           className={
             styles["api-key"] + " " + (declutter ? styles.declutter : "")
           }
@@ -212,7 +222,8 @@ export default function Home() {
           Enter a word in any language:
         </h2>
         <form onSubmit={onSubmit}>
-          <div className={styles.language}>
+          <Tooltip content={<LanguageTooltipContent />}>
+            {/* <div className={styles.language}> */}
             <select
               name="language"
               value={languageInput}
@@ -226,8 +237,10 @@ export default function Home() {
                 </option>
               ))}
             </select>
-          </div>
-          <div className={styles.word}>
+            {/* </div> */}
+          </Tooltip>
+          <Tooltip content={<WordTooltipContent />}>
+            {/* <div className={styles.word}> */}
             <input
               type="text"
               name="word"
@@ -237,32 +250,42 @@ export default function Home() {
               disabled={!enableSubmit}
               lang={lang}
             />
-          </div>
-          <div className={styles.submit}>
+            {/* </div> */}
+          </Tooltip>
+          <Tooltip content={<SubmitTooltipContent />}>
+            {/* <div className={styles.submit}> */}
             <input
               type="submit"
               value="Generate mnemonics"
               disabled={!enableSubmit}
             />
-          </div>
+            {/* </div> */}
+          </Tooltip>
         </form>
-        <div className={result ? styles.result : ""}>
-          {String(result || "")
-            .trim()
-            .split("\n")
-            .map((x, i) => (
-              <p key={i}>{x}</p>
-            ))}
-        </div>
-        {keyInput && firstDraft && result ? (
-          <div className={styles.refine}>
-            <Refinement apiKey={keyInput} mnemonicsOutput={firstDraft} />
+        <Tooltip
+          content={<ResultTooltipContent />}
+          useAnimateFill={false}
+          placement="left"
+        >
+          <div tabIndex="0" className={result ? styles.result : ""}>
+            {String(result || "")
+              .trim()
+              .split("\n")
+              .map((x, i) => (
+                <p key={i}>{x}</p>
+              ))}
           </div>
+        </Tooltip>
+        {keyInput && firstDraft && result ? (
+          // <div className={styles.refine}></div>
+          <Refinement apiKey={keyInput} mnemonicsOutput={firstDraft} />
         ) : (
           ""
         )}
         <div style={{ marginTop: "100px" }}>
-          <a href="/customer-support-demo">Customer Support Demo</a>
+          <Tooltip content="Just another simple prompt demo.">
+            <a href="/customer-support-demo">Customer Support Demo</a>
+          </Tooltip>
         </div>
       </main>
     </div>
