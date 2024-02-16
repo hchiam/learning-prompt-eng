@@ -60,8 +60,8 @@ export function SubmitTooltipContent() {
       <CustomList>
         <ol>
           <li>
-            A prompt that generates first-draft mnemonics and a Wiktionary link
-            to verify the meaning/pronunciation.
+            First-draft mnemonics and Wiktionary link to check the word's
+            meaning.
           </li>
         </ol>
         <p>Then use the SR (Self-Refine) technique with two further prompts:</p>
@@ -149,8 +149,13 @@ export function RefineTooltipContentStep2() {
           </li>
           <li>visually memorable? Response format: "Yes/No, ..."</li>
           <li>
-            incorporates correct meaning and pronunciation? Response format:
-            "Yes/No, ..."
+            tells you what the meaning of the word is in English before giving
+            the mnemonics? Response format: "Yes/No, ..."
+          </li>
+          <li>
+            incorporates correct meaning and pronunciation in the source
+            language and maps it to English words that sound like it? Response
+            format: "Yes/No, ..."
           </li>
           <li>
             incorporates/leverages etymology and using root words (ignoring
@@ -211,7 +216,8 @@ export function RefineTooltipContentStep3() {
         <p># Example format of "Improved Pun-Based Mnemonics":</p>
         <p>---</p>
         <p>
-          Check with this source:
+          The &lt;language&gt; word "&lt;word&gt;" means
+          "&lt;english-meaning&gt;" in English. Check with this source:
           https://en.wiktionary.org/wiki/&lt;word&gt;#&lt;language&gt;
         </p>
         <p>Mnemonics:</p>

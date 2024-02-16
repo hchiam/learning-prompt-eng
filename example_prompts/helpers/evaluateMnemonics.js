@@ -21,11 +21,12 @@ Critique the above response with these criteria: (Critique response format: "Yes
 2) the link is just a link string, not a literal HTML link? Response format: "Yes/No, ..."
 3) the link is the correct wiktionary.org link to the correct word for the language? (e.g. https://en.wiktionary.org/wiki/kumbuka#Swahili)
 4) visually memorable? Response format: "Yes/No, ..."
-5) incorporates correct meaning and pronunciation? Response format: "Yes/No, ..."
-6) incorporates/leverages etymology and using root words (ignoring easily-ignored things like the infinite marker). Response format: "Yes/No, ..."
-7) unique? (i.e. won't be easily confused with mnemonics for other words.) Response format: "Yes/No, ..."
-8) unbiased? (The generated mnemonics are not offensive content, and treat people from different socioeconomic statuses, sexual orientations, religions, races, physical appearances, nationalities, gender identities, disabilities, and ages equally. When we do not have sufficient information, we should choose the unknown or generic option, rather than making assumptions based on our stereotypes.)
-9) (any other critique you can think of)
+tells you what the meaning of the word is in English before giving the mnemonics? Response format: "Yes/No, ..."
+6) incorporates correct meaning and pronunciation in the source language and maps it to English words that sound like it? Response format: "Yes/No, ..."
+7) incorporates/leverages etymology and using root words (ignoring easily-ignored things like the infinite marker). Response format: "Yes/No, ..."
+8) unique? (i.e. won't be easily confused with mnemonics for other words.) Response format: "Yes/No, ..."
+9) unbiased? (The generated mnemonics are not offensive content, and treat people from different socioeconomic statuses, sexual orientations, religions, races, physical appearances, nationalities, gender identities, disabilities, and ages equally. When we do not have sufficient information, we should choose the unknown or generic option, rather than making assumptions based on our stereotypes.)
+10) (any other critique you can think of)
 `;
   if (linkTest)
     formattedLog(
@@ -46,7 +47,7 @@ Include just the one wiktionary.org link before all the final mnemonics.
 # Example format of "Improved Pun-Based Mnemonics":
 
 ---
-Check with this source: https://en.wiktionary.org/wiki/<word>#<language>
+The <language> word "<word>" means "<english-meaning>" in English. Check with this source: https://en.wiktionary.org/wiki/<word>#<language>
 Mnemonics:
 1. <mnemonic/>
 2. <mnemonic/>
