@@ -28,6 +28,7 @@ export default function Tooltip({
 
 const StyledTippy = styled(Tippy)`
   opacity: 0.97;
+  font-family: "ColfaxAI", Avenir, Helvetica, Arial, sans-serif;
 
   &[data-placement="top"]:before,
   &[data-placement="bottom"]:before,
