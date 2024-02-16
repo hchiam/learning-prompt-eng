@@ -60,11 +60,11 @@ export function SubmitTooltipContent() {
       <CustomList>
         <ol>
           <li>
-            First draft prompt to generate mnemonics and a link to for
-            reference.
+            A prompt that generates first-draft mnemonics and a Wiktionary link
+            to verify the meaning/pronunciation.
           </li>
         </ol>
-        <p>Then use SR (Self-Refine) technique with two further prompts:</p>
+        <p>Then use the SR (Self-Refine) technique with two further prompts:</p>
         <ol style={{ counterReset: "none" }}>
           <li>Critique output mnemonics, link, etc.</li>
           <li>Generate refined output.</li>
@@ -115,7 +115,7 @@ export function RefineTooltipContentStep2() {
     <>
       <Prefix />
       <p>
-        Using SR (Self-Refine) technique with two further prompts (steps 2 and
+        Use the SR (Self-Refine) technique with two further prompts (steps 2 and
         3):
       </p>
       <CustomH4>
@@ -181,7 +181,7 @@ export function RefineTooltipContentStep3() {
     <>
       <Prefix />
       <p>
-        Using SR (Self-Refine) technique with two further prompts (steps 2 and
+        Use the SR (Self-Refine) technique with two further prompts (steps 2 and
         3):
       </p>
       <CustomH4>
