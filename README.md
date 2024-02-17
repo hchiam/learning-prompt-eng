@@ -244,3 +244,7 @@ https://github.com/hchiam/learning-gpt4all
     - search-and-cite capability is a good complement to CoVe for reducing hallucinations
     - calculator capability is a good complement to CoT for accurate compound math operations
     - code interpreter capability is a good complement to PoTh (it can calculate/execute its own code thinking steps)
+- use chatgpt better: https://youtu.be/Y35EHDRNUeo?feature=shared
+  - **"ask me 5 questions that will improve the response that you will be giving me"**
+  - **"give me 10 ChatGPT prompts that will help me become more productive at my job"**
+  - **"how does the following apply to <my role/task/etc>"** + my version of a personalized summary: ["Give a terse summary of the following text. The summary shouldn't be a proper grammatical sentence, but rather optimized for key words to capture as much info in few words and specific examples mentioned in the text. For example, pseudo-formulas."](https://github.com/hchiam/learning-prompt-eng/blob/main/other-related-courses/learnprompting/advanced-prompt-engineering/personalized-summaries.txt)
