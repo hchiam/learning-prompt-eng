@@ -5,6 +5,8 @@ import "tippy.js/dist/tippy.css";
 import "tippy.js/dist/backdrop.css";
 import "tippy.js/animations/shift-away.css";
 import styled from "styled-components";
+import { usingTouchScreen } from "../helpers/detectTouchscreen";
+import getViewWidth from "../helpers/getViewWidth";
 
 export default function Tooltip({
   children,
@@ -12,18 +14,23 @@ export default function Tooltip({
   placement = "auto",
   useAnimateFill = true,
 }) {
-  return (
-    <StyledTippy
-      content={content}
-      placement={placement}
-      animateFill={useAnimateFill}
-      plugins={[animateFill]}
-      arrow={roundArrow}
-      interactiveDebounce={75}
-    >
-      {children}
-    </StyledTippy>
-  );
+  const spaceNeededForTwoTooltipsOnRefine = 1250;
+  if (getViewWidth() < spaceNeededForTwoTooltipsOnRefine) {
+    return <>{children}</>;
+  } else {
+    return (
+      <StyledTippy
+        content={content}
+        placement={placement}
+        animateFill={useAnimateFill}
+        plugins={[animateFill]}
+        arrow={roundArrow}
+        interactiveDebounce={75}
+      >
+        {children}
+      </StyledTippy>
+    );
+  }
 }
 
 const StyledTippy = styled(Tippy)`
