@@ -79,16 +79,8 @@ export default function Refinement({ apiKey, mnemonicsOutput }) {
   return (
     <>
       {refinedOutput ? (
-        <Tippy
-          content={<RefineTooltipContentStep2 />}
-          // useAnimateFill={false}
-          placement="left"
-        >
-          <Tippy
-            content={<RefineTooltipContentStep3 />}
-            // useAnimateFill={false}
-            placement="right"
-          >
+        <Tippy content={<RefineTooltipContentStep2 />} placement="left">
+          <Tippy content={<RefineTooltipContentStep3 />} placement="right">
             <div tabIndex="0" className={styles.container}>
               <h2 style={{ marginBottom: 0 }}>Refined Version:</h2>
               <div
