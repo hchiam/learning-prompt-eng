@@ -9,3 +9,7 @@ a:hover {
   border-radius: 0.5rem;
   outline: 3px solid black;
 }
+
+.tippy-svg-arrow {
+  display: none; /* tippy side tooltips have weird secondary triangle */
+}

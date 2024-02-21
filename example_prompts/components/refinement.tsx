@@ -11,7 +11,6 @@ import { Configuration, OpenAIApi } from "openai";
 import sharedStyles from "../pages/index.module.scss";
 import styles from "./refinement.module.scss";
 import { scroll } from "../helpers/scroll";
-import Tooltip from "./tooltip";
 import {
   RefineTooltipContentStep2,
   RefineTooltipContentStep3,
@@ -93,7 +92,7 @@ export default function Refinement({ apiKey, mnemonicsOutput }) {
             <div tabIndex="0" className={styles.container}>
               <h2 style={{ marginBottom: 0 }}>Refined Version:</h2>
               <div
-                className={sharedStyles.result}
+                className={sharedStyles.refine}
                 style={{ marginTop: 0, paddingTop: 0 }}
               >
                 {String(refinedOutput || "")

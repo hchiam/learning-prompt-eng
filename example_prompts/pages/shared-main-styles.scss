@@ -85,12 +85,17 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
-.main .result {
+.main .result,
+.main .refine {
   font-weight: bold;
   margin-top: 40px;
   padding: 2rem;
   max-width: 50ch;
   overflow-wrap: anywhere;
+}
+.main .result {
+  border: 1px solid #10a37f;
+  margin-bottom: 40px;
 }
 .declutter {
   animation: declutter 0.2s both;

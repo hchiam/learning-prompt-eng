@@ -4,11 +4,6 @@ import { Configuration, OpenAIApi } from "openai";
 import styles from "./index.module.scss";
 import generatePrompt from "../helpers/generatePrompt";
 import languageList from "../helpers/languageList";
-import {
-  critiqueMnemonics,
-  getRefinedMnemonics,
-} from "../helpers/evaluateMnemonics";
-import removeNonWiktionaryLinks from "../helpers/removeNonWiktionaryLinks";
 import getCompletion from "../helpers/getCompletion";
 import formattedLog from "../helpers/formattedLog";
 import Refinement from "../components/refinement";
@@ -16,7 +11,6 @@ import React from "react";
 import Tooltip from "../components/tooltip";
 import {
   LanguageTooltipContent,
-  RefineTooltipContent,
   ResultTooltipContent,
   SubmitTooltipContent,
   WordTooltipContent,
@@ -32,7 +26,6 @@ export default function Home() {
   const [declutter, setDeclutter] = useState(false);
 
   const [firstDraft, setFirstDraft] = useState("");
-  const [refinedOutput, setRefinedOutput] = useState("");
 
   function handleLanguageSelect(target) {
     setLang(
@@ -97,19 +90,6 @@ export default function Home() {
       const mnemonicsOutput = completion.data.choices[0].text;
       if (onSuccess) onSuccess(mnemonicsOutput);
       setFirstDraft(mnemonicsOutput);
-
-      // const critiquedOutputPrompt = critiqueMnemonics(mnemonicsOutput);
-      // const completion2 = await getCompletion(openai, critiquedOutputPrompt);
-      // const critiquedOutput = completion2.data.choices[0].text;
-      // formattedLog(`%ccritiquedOutput:%c\n\n${critiquedOutput}`);
-
-      // const refinedOutputPrompt = getRefinedMnemonics(mnemonicsOutput + '\n\n' + critiquedOutput);
-      // const completion3 = await getCompletion(openai, refinedOutputPrompt);
-      // let finalOutput = completion3.data.choices[0].text;
-      // finalOutput = removeNonWiktionaryLinks(finalOutput);
-      // finalOutput = finalOutput.replace(/https?:\/\//g, '');
-      // setRefinedOutput(finalOutput);
-      // formattedLog(`%cfinalOutput:%c\n\n${ finalOutput}`);
     } catch (error) {
       setDeclutter(false);
       // Consider adjusting the error handling logic for your use case
@@ -223,7 +203,6 @@ export default function Home() {
         </h2>
         <form onSubmit={onSubmit}>
           <Tooltip content={<LanguageTooltipContent />}>
-            {/* <div className={styles.language}> */}
             <select
               name="language"
               value={languageInput}
@@ -237,10 +216,8 @@ export default function Home() {
                 </option>
               ))}
             </select>
-            {/* </div> */}
           </Tooltip>
           <Tooltip content={<WordTooltipContent />}>
-            {/* <div className={styles.word}> */}
             <input
               type="text"
               name="word"
@@ -250,23 +227,16 @@ export default function Home() {
               disabled={!enableSubmit}
               lang={lang}
             />
-            {/* </div> */}
           </Tooltip>
           <Tooltip content={<SubmitTooltipContent />}>
-            {/* <div className={styles.submit}> */}
             <input
               type="submit"
               value="Generate mnemonics"
               disabled={!enableSubmit}
             />
-            {/* </div> */}
           </Tooltip>
         </form>
-        <Tooltip
-          content={<ResultTooltipContent />}
-          useAnimateFill={false}
-          placement="left"
-        >
+        <Tooltip content={<ResultTooltipContent />} useAnimateFill={false}>
           <div tabIndex="0" className={result ? styles.result : ""}>
             {String(result || "")
               .trim()
@@ -277,7 +247,6 @@ export default function Home() {
           </div>
         </Tooltip>
         {keyInput && firstDraft && result ? (
-          // <div className={styles.refine}></div>
           <Refinement apiKey={keyInput} mnemonicsOutput={firstDraft} />
         ) : (
           ""
