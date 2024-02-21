@@ -11,11 +11,7 @@ import { Configuration, OpenAIApi } from "openai";
 import sharedStyles from "../pages/index.module.scss";
 import styles from "./refinement.module.scss";
 import { scroll } from "../helpers/scroll";
-import {
-  RefineTooltipContentStep2,
-  RefineTooltipContentStep3,
-} from "./tooltipTexts";
-import Tippy from "@tippyjs/react";
+import RefinementDoubleTooltip from "./refinementDoubleTooltip";
 
 export default function Refinement({ apiKey, mnemonicsOutput }) {
   const [refinedOutput, setRefinedOutput] = useState("");
@@ -79,24 +75,22 @@ export default function Refinement({ apiKey, mnemonicsOutput }) {
   return (
     <>
       {refinedOutput ? (
-        <Tippy content={<RefineTooltipContentStep2 />} placement="left">
-          <Tippy content={<RefineTooltipContentStep3 />} placement="right">
-            <div tabIndex="0" className={styles.container}>
-              <h2 style={{ marginBottom: 0 }}>Refined Version:</h2>
-              <div
-                className={sharedStyles.refine}
-                style={{ marginTop: 0, paddingTop: 0 }}
-              >
-                {String(refinedOutput || "")
-                  .trim()
-                  .split("\n")
-                  .map((x, i) => (
-                    <p key={i}>{x}</p>
-                  ))}
-              </div>
+        <RefinementDoubleTooltip>
+          <div tabIndex="0" className={styles.container}>
+            <h2 style={{ marginBottom: 0 }}>Refined Version:</h2>
+            <div
+              className={sharedStyles.refine}
+              style={{ marginTop: 0, paddingTop: 0 }}
+            >
+              {String(refinedOutput || "")
+                .trim()
+                .split("\n")
+                .map((x, i) => (
+                  <p key={i}>{x}</p>
+                ))}
             </div>
-          </Tippy>
-        </Tippy>
+          </div>
+        </RefinementDoubleTooltip>
       ) : (
         <h2 className={styles.waiting}>{refiningText}</h2>
       )}
