@@ -160,6 +160,7 @@ https://github.com/hchiam/learning-gpt4all
   - 8 tips for writing better prompts: https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api
     - e.g.: `Summarize the text below and (...) {text}` --> `Summarize the text below and (...) Text: """{text}"""`
     - e.g.: add a "leading word" or start the first word to nudge the model's response towards a specific pattern: `Write code in Python to do (...):` --> `Write code in Python to do (...): import`
+      - similar to a "leading sentence", aka "continuation sentence" or "continuation statement"
     - model, temperature, max_tokens, stop
 - udemy:
   - https://www.udemy.com/course/promptengineering:
