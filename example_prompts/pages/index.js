@@ -161,7 +161,7 @@ export default function Home() {
           This basic demo generates mnemonics to help you remember the
           pronunciation and meaning of a word in another language by using
           English "puns". For more free-form interaction with the ability to
-          search and generates images, or to generate mnemonics for a list of
+          search and generate images, or to generate mnemonics for a list of
           vocab, consider trying{" "}
           <a
             href="https://chat.openai.com/g/g-RsoXtrv5O-pun-linguist"
