@@ -13,3 +13,7 @@ a:hover {
 .tippy-svg-arrow {
   display: none; /* tippy side tooltips have weird secondary triangle */
 }
+
+body:has(input[type="submit"]:focus) .tippy-box {
+  max-width: min(calc(100dvw - 20px), 410px) !important;
+}
