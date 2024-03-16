@@ -249,3 +249,6 @@ https://github.com/hchiam/learning-gpt4all
   - **"ask me 5 questions that will improve the response that you will be giving me"**
   - **"give me 10 ChatGPT prompts that will help me become more productive at my job"**
   - **"how does the following apply to <my role/task/etc>"** + my version of a personalized summary: ["Give a terse summary of the following text. The summary shouldn't be a proper grammatical sentence, but rather optimized for key words to capture as much info in few words and specific examples mentioned in the text. For example, pseudo-formulas."](https://github.com/hchiam/learning-prompt-eng/blob/main/other-related-courses/learnprompting/advanced-prompt-engineering/personalized-summaries.txt) + "lesser-known"
+- copywriting frameworks: https://jdmeier.com/copywriting-frameworks/ = maybe helpful for general communication practice:
+  - i think i personally prefer [APP](https://jdmeier.com/copywriting-frameworks/#app) and [5Cs](https://jdmeier.com/copywriting-frameworks/#5cs).
+  - but note: different situation, different tool.
