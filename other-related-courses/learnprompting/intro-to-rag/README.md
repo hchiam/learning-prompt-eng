@@ -63,6 +63,43 @@ Gen AI (combines most relevant document(s) and user input)
 ## 7 of 7: 
 output
 
-# Other Notes
+## example vector DB for RAG in colab code:
 
 https://docs.llamaindex.ai/en/stable/getting_started/starter_example/
+
+Create /data/[paul_graham_essay.txt](https://raw.githubusercontent.com/run-llama/llama_index/main/docs/docs/examples/data/paul_graham/paul_graham_essay.txt)
+
+```sh
+# for colab:
+!pip install llama-index
+```
+
+```py
+# for colab:
+import os
+from google.colab import userdata
+os.environ["OPENAI_API_KEY"] = userdata.get('OPENAI_API_KEY')
+```
+
+```py
+from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
+
+documents = SimpleDirectoryReader("data").load_data()
+index = VectorStoreIndex.from_documents(documents)
+```
+
+```py
+query_engine = index.as_query_engine()
+response = query_engine.query("What did the author do growing up?")
+print(response)
+# The author focused on writing short stories and programming, starting with early attempts on an IBM 1401 using Fortran in 9th grade, and later transitioning to microcomputers like the TRS-80 to write games, rocket prediction programs, and a word processor.
+```
+
+```py
+# extras: 
+# Viewing Queries and Events Using Logging
+# Storing your index
+# Loading your index
+
+https://docs.llamaindex.ai/en/stable/getting_started/starter_example/
+```
