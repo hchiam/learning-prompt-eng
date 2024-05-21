@@ -36,7 +36,7 @@ user input:
 ## 8 of 8: final output: 
 mavis 2000 badminton birdies are cheaper right now. 
 
-# Vector Databases
+# Vector Databases with RAG
 
 ## 1 of 7: 
 1. user input
