@@ -35,3 +35,30 @@ user input:
 
 ## 8 of 8: final output: 
 mavis 2000 badminton birdies are cheaper right now. 
+
+# Vector Databases
+
+## 1 of 7: 
+1. user input
+2. documentation pages
+
+## 2 of 7: 
+1. user input --> embedding
+2. documentation pages --> embedding
+
+## 3 of 7: 
+comparison model (user input embedding vs documentation pages embedding)
+
+## 4 of 7: 
+most relevant document(s)
+
+## 5 of 7: 
+most relevant document(s)
+
+user input
+
+## 6 of 7: 
+Gen AI (combines most relevant document(s) and user input)
+
+## 7 of 7: 
+output
