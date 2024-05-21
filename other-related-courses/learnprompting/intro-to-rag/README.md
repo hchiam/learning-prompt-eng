@@ -63,6 +63,6 @@ Gen AI (combines most relevant document(s) and user input)
 ## 7 of 7: 
 output
 
-# other
+# Other Notes
 
 https://docs.llamaindex.ai/en/stable/getting_started/starter_example/
