@@ -1,4 +1,4 @@
-# [Pun Linguist](https://chat.openai.com/g/g-RsoXtrv5O-pun-linguist) GPT - backup of config
+# [Pun Linguist](https://chatgpt.com/g/g-RsoXtrv5O-pun-linguist) GPT - backup of config
 
 ## Description
 
