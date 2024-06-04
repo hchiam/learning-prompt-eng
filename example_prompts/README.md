@@ -6,7 +6,7 @@
    - The language and parts of the prompt are implied from the conversation.
    - You can see the example conversation, showing an attempt at getting ChatGPT to produce responses that are progressively more relevant. You can also see a more fleshed-out version of this prompt used in a web app: https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/generatePrompt.js
      - I also made a Google MakerSuite prompt version of it: https://makersuite.google.com/app/prompts/13MNpYVx4kqQXbZTygBNfUGQodqCRcKWY
-     - And here's an OpenAI custom GPT version of it, named "Pun Linguist": https://chat.openai.com/g/g-RsoXtrv5O-pun-linguist
+     - And here's an OpenAI custom GPT version of it, named "Pun Linguist": https://chatgpt.com/g/g-RsoXtrv5O-pun-linguist
        - more info on Pun Linguist: https://github.com/hchiam/learning-prompt-eng/tree/main/example_prompts/pun_linguist_gpt
        - and a [bookmarklet](https://github.com/hchiam/learning-js/tree/main/bookmarklets#bookmarklets) version of Pun Linguist: https://github.com/hchiam/learning-js/blob/main/bookmarklets/generateMnemonics.js
 4. [`"Explain Prompt Engineering to me in 5 sentences, and then quiz me on it but don't give me the answers until after I respond, and also rate my answers. Please ask only three questions and ask them one at a time, and let me answer the first question before you ask the next questions.
