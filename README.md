@@ -5,6 +5,7 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 - prompt engineering is apparently around 2-3 years old! (as of 2023)
 - do prompt engineering in order to most effectively use new models as they currently are?
 - these notes are for quick Ctrl+F reference
+- be specific, iterate, and other tricks/techniques below
 - a roadmap I wish I knew about when I first started learning: https://roadmap.sh/prompt-engineering 
 
 ## According to https://chat.openai.com:
