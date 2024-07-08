@@ -192,7 +192,7 @@ https://github.com/hchiam/learning-gpt4all
 
 - **my example prompt template** (WIP) + my OpenAI/DeepLearning.AI course notes + my syllabic abbreviation **mnemonic**: _"Per**ConTa**, **ExFor**To"_ ([based on a Jeff Su video](https://www.youtube.com/watch?v=jC4v5AS4RIM)):
   - https://github.com/hchiam/learning-prompt-eng/blob/main/open_ai_course_notes.md#example-prompt-template-wip
-- make LLM apps: https://dust.tt/
+- TODO - try making LLM apps with https://dust.tt
 - prompt token count and breakdown: https://platform.openai.com/tokenizer
 - tip: include in the prompt to ask the user for feedback or clarification or details (better performance + user engagement) https://www.youtube.com/watch?v=s4YKMFFiySI
 - thought generation:
