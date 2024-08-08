@@ -194,6 +194,7 @@ https://github.com/hchiam/learning-gpt4all
   - https://github.com/hchiam/learning-prompt-eng/blob/main/open_ai_course_notes.md#example-prompt-template-wip
 - TODO - try making LLM apps/APIs with https://dust.tt - https://www.youtube.com/watch?v=kM8UwgUxv2o
 - prompt token count and breakdown: https://platform.openai.com/tokenizer
+  - https://github.com/hchiam/learning-llm-token-counter
 - tip: include in the prompt to ask the user for feedback or clarification or details (better performance + user engagement) https://www.youtube.com/watch?v=s4YKMFFiySI
 - thought generation:
   - **_CoT_** = Chain-of-Thought = (see notes above).
