@@ -254,3 +254,7 @@ https://github.com/hchiam/learning-gpt4all
 - copywriting frameworks: https://jdmeier.com/copywriting-frameworks/ = maybe helpful for general communication practice:
   - i think i personally prefer [APP](https://jdmeier.com/copywriting-frameworks/#app) and [5Cs](https://jdmeier.com/copywriting-frameworks/#5cs).
   - but note: different situation, different tool.
+- [tips for getting better at prompting](https://youtube.com/shorts/xgXHayDOB7Q?feature=shared):
+  - given someone else's good prompt, **understand** **how** and **why** it works
+  - try to see with **fresh eyes/perspective**, or **get others to see** your prompt
+  - **test/push** what **you think** are the **boundaries** of the **capabilities** of the model
