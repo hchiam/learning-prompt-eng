@@ -205,6 +205,10 @@ https://github.com/hchiam/learning-gpt4all
   - **_Tab-CoT_** = Tabular CoT = reason both horizontally and vertically, with column headings relevant to the task at hand:
     - e.g.: end prompt with markdown `|step|question|response|`
     - e.g.: end prompt with markdown `|step|subquestion|procedure|result|`
+  - **_ToT_** = Tree-of-Thought = doesn't have to be separate LLM chats!, could be 1 prompt of pretending to be 3 experts writing one step of their thinking, share with group, then write the next step, repeating, and if an expert realizes they're wrong at any point, they leave; or could be 1 prompt for generating multiple proposed solutions (or next step) but then evaluate each proposed solution (or next step), or choose the best one.
+    - references:
+      - https://github.com/dave1010/tree-of-thought-prompting?tab=readme-ov-file#tree-of-thought-prompting
+      - https://learnprompting.org/docs/advanced/decomposition/tree_of_thoughts
 - problem decomposition:
   - **_LtM_** = Least-to-Most = (see notes above).
   - **_PaS_** = Plan-and-Solve = structured zero-shot-CoT like ThoT but instead end with "Let's first understand the problem and devise a plan to solve it. Then, let's carry out the plan and solve the problem step by step." I think I'd want to combine this PaS with ThoT (see above).
