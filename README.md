@@ -14,28 +14,31 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 ## Example prompts ([`/example_prompts`](https://github.com/hchiam/learning-prompt-eng/tree/main/example_prompts#example-prompts))
 
-https://github.com/hchiam/learning-prompt-eng/tree/main/example_prompts#example-prompts
-
-https://chatgpt.com/g/g-RsoXtrv5O-pun-linguist (see [my Pun Linguist notes](https://github.com/hchiam/learning-prompt-eng/tree/main/example_prompts/pun_linguist_gpt))
-
-https://hchiam-example-prompts.surge.sh
-
-https://hchiam-example-prompts.surge.sh/customer-support-demo (cites docs)
-
-or try it locally with your OpenAI API key set up in `example_prompts/.env`:
-
-```sh
-cd example_prompts
-npm install # or yarn
-
-npm run dev # or yarn dev
-# http://localhost:3000/
-```
-
 You might be interested in the code related to generating prompts for the customer support demo, for example:
 
 - https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/customer-support-demo/referToDoc.js
+
 - https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/antiIgnoreInstructions.js
+
+More examples:
+
+- https://github.com/hchiam/learning-prompt-eng/tree/main/example_prompts#example-prompts
+
+- https://chatgpt.com/g/g-RsoXtrv5O-pun-linguist (see [my Pun Linguist notes](https://github.com/hchiam/learning-prompt-eng/tree/main/example_prompts/pun_linguist_gpt))
+
+- https://hchiam-example-prompts.surge.sh
+
+- https://hchiam-example-prompts.surge.sh/customer-support-demo (cites docs)
+
+  or try it locally with your OpenAI API key set up in `example_prompts/.env`:
+  
+  ```sh
+  cd example_prompts
+  npm install # or yarn
+  
+  npm run dev # or yarn dev
+  # http://localhost:3000/
+  ```
 
 From [Thomas Frank](https://github.com/TomFrankly): https://www.youtube.com/watch?v=NpUuuT_EzSs
 
