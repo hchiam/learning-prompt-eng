@@ -16,7 +16,7 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 You might be interested in the code related to generating prompts for the customer support demo, for example:
 
-- https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/antiIgnoreInstructions.js
+- [antiIgnoreInstructions.js](https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/antiIgnoreInstructions.js), which builds on top of the [random sequence enclosure](https://learnprompting.org/docs/prompt_hacking/defensive_measures/random_sequence) technique
 
 - https://github.com/hchiam/learning-prompt-eng/blob/main/example_prompts/helpers/customer-support-demo/referToDoc.js
 
