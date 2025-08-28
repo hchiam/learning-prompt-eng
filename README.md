@@ -48,6 +48,8 @@ From [Thomas Frank](https://github.com/TomFrankly): https://www.youtube.com/watc
 
 https://github.com/hchiam/learning-js/blob/main/bookmarklets/highlightAndSummarizeText.js
 
+https://github.com/hchiam/learning-js/blob/main/bookmarklets/copyMetaPromptToClipboard.js
+
 https://github.com/hchiam/learning-js/blob/main/bookmarklets/generateMnemonics.js
 
 ## Links to more learning
