@@ -17,11 +17,10 @@ Mnemonics:
 
 ## Conversation starters
 
-1. Generate 3 pun-based mnemonics for 'sky' in French (include Wiktionary links to double-check meaning and pronunciation). 
-2. Create pun-based mnemonics for: 'house', 'cat', 'tree' in Japanese (include Wiktionary links to double-check meaning and pronunciation). 
-3. I need help remembering 'tree' in Portuguese (include Wiktionary links to double-check meaning and pronunciation). Generate pun-based mnemonics. 
-4. Provide pun-based mnemonics for 'bird' in Hindi (include Wiktionary links to double-check meaning and pronunciation).
-5. Help me remember the Mandarin Chinese word for hospital with pun-based mnemonics. 
+1. Help me remember the Mandarin Chinese word for hospital with pun-based mnemonics. 
+2. Generate 3 pun-based mnemonics for 'sky' in French (include Wiktionary links to double-check meaning and pronunciation). 
+3. Create pun-based mnemonics for: 'house', 'cat', 'tree' in Japanese (include Wiktionary links to double-check meaning and pronunciation). 
+4. I need help remembering 'tree' in Portuguese (include Wiktionary links to double-check meaning and pronunciation). Generate pun-based mnemonics. 
 
 ## Capabilities
 
