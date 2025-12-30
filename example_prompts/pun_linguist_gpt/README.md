@@ -17,10 +17,10 @@ Mnemonics:
 
 ## Conversation starters
 
-1. Generate 3 mnemonics for 'sky' in French (include Wiktionary links to double-check meaning and pronunciation).
-2. Create mnemonics for: 'house', 'cat', 'tree' in Japanese (include Wiktionary links to double-check meaning and pronunciation).
-3. I need help remembering 'tree' in Portuguese (include Wiktionary links to double-check meaning and pronunciation).
-4. Provide puns for 'bird' in Hindi (include Wiktionary links to double-check meaning and pronunciation).
+1. Generate 3 pun-based mnemonics for 'sky' in French (include Wiktionary links to double-check meaning and pronunciation). 
+2. Create pun-based mnemonics for: 'house', 'cat', 'tree' in Japanese (include Wiktionary links to double-check meaning and pronunciation). 
+3. I need help remembering 'tree' in Portuguese (include Wiktionary links to double-check meaning and pronunciation). Generate pun-based mnemonics. 
+4. Provide pun-based mnemonics for 'bird' in Hindi (include Wiktionary links to double-check meaning and pronunciation). 
 
 ## Capabilities
 
